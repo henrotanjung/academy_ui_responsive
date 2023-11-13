@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+body {
+    font-family: Poppins;
+}
+
+
+/* Responsive design */
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    .img_join_our_class {
+        width: 418px!important;
+    }
+}
+
+@media (min-width: 300px) {
+    .line_separated {
+        height: 42.690vw;
+    }
+    .overlay-text {
+        /* these two are needed - the align self makes the column not stretch the whole height of the image column and the translate moves the column over the image */
+        align-self: flex-start;
+        transform: translateY(-120%);
+    }
+    .line_separated_title_to_text {
+        height: 1.605vw;
+    }
+    /* .line_separated_title_button {
+height: 0px;
+} */
+    /* .banner_text {
+margin-left: 20px;
+} */
+}
+
+@media (min-width: 576px) {
+    .line_separated {
+        height: 42.690vw;
+    }
+    .overlay-text {
+        /* these two are needed - the align self makes the column not stretch the whole height of the image column and the translate moves the column over the image */
+        align-self: flex-start;
+        transform: translateY(-120%);
+    }
+    .line_separated_title_to_text {
+        height: 1.605vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .line_separated {
+        height: 42.690vw;
+    }
+    .overlay-text {
+        /* these two are needed - the align self makes the column not stretch the whole height of the image column and the translate moves the column over the image */
+        align-self: flex-start;
+        transform: translateY(-120%);
+    }
+    .line_separated_title_to_text {
+        height: 1.605vw;
+    }
+    .title_training_workshop_right {
+        /* min-width: 640px; */
+        /* typography */
+        color: var(--gsi-academy-black-b-3, #333);
+        text-align: right;
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        /* 66px */
+        letter-spacing: -0.88px;
+    }
+    .title_training_workshop_right span {
+        color: var(--gsi-academy-blue-b-5, #0080BB);
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -0.88px;
+    }
+    .context_right_training_workshop {
+        color: var(--gsi-academy-black-b-6, #7F7F7F);
+        text-align: right;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.2px;
+    }
+    .want_to_learn_content .col_right img {
+        width: 345px;
+        padding-top: 39px;
+    }
+}
+
+
+/* large (LG) or dekstop verion */
+
+@media (min-width: 992px) {
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .banner_header {
+        width: auto;
+        height: 580px;
+    }
+    .banner_header>.container {
+        padding-top: 79px;
+    }
+    .line_separated_title_50 {
+        min-height: 50px;
+    }
+    .banner_text {
+        background-color: #ffffff00;
+        width: 520px;
+        padding: 0px;
+    }
+    .title_banner {
+        font-size: 44px;
+    }
+    .line_separated {
+        height: 675px;
+    }
+    .sub_text_banner {
+        font-size: 20px;
+    }
+    .button_banner {
+        padding: 15px 60px;
+        /* typegraphy  */
+        color: #FFF;
+        text-align: center;
+        /* Button */
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    .banner_header>.container {
+        padding-top: 79px;
+    }
+    .line_separated_title_to_text {
+        height: 20px;
+    }
+    .text_course {
+        color: var(--gsi-academy-black-b-6, #7F7F7F);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        /* 142.857% */
+        letter-spacing: 0.2px;
+    }
+    .harga {
+        min-height: 44px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* border: 1px solid; */
+    }
+    .discount {
+        color: #F00;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        /* 171.429% */
+        letter-spacing: 0.2px;
+        text-decoration-line: strikethrough;
+    }
+    .harga_setelah_disc {
+        color: var(--gsi-academy-black-b-1, #2E353A);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        /* 150% */
+        letter-spacing: 0.2px;
+    }
+    .popular_prog {
+        /* margin-top: -380px; */
+        /* margin-top: -19.798vw; */
+        min-height: 810px;
+        max-height: 810px;
+        /* border: 1px solid; */
+    }
+    .popular_prog .col-md {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .card_popular_program {
+        max-height: 562px;
+        min-height: 562px;
+    }
+    .card_popular_program+img {
+        width: 400px;
+        height: 300px;
+    }
+    .our_course {
+        min-height: 1120px;
+        max-height: 1120px;
+        /* border: 1px solid; */
+    }
+    .card_our_course {
+        height: 770px;
+        min-height: 770px;
+    }
+    .want_to_learn {
+        min-height: 600px;
+        max-height: 600px;
+        /* border: 1px solid; */
+    }
+    .img_join_our_class {
+        width: 520px;
+    }
+    .training_workshop {
+        height: 600px;
+        border: 1px solid;
+    }
+    .training_workshop .col_right {
+        /* padding-right: 0px; */
+        padding-left: 0px;
+        border: 1px solid;
+    }
+    .line_separated_100 {
+        height: 100px;
+    }
+    .want_to_learn_content {
+        padding-top: 39px;
+    }
+    .title_our_popular_program {
+        font-size: 44px;
+    }
+    .want_to_learn_content>div {
+        /* border: 1px solid; */
+        min-height: 600px;
+    }
+    .want_to_learn_left {
+        font-size: 44px;
+        max-width: 487px;
+        max-height: 412px;
+    }
+    .want_to_learn_left>span {
+        color: #486284;
+        font-family: Poppins;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.88px;
+    }
+    .join_our_course {
+        height: 54px;
+        width: 304px;
+        display: flex;
+        padding: 15px 60px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        background: var(--gsi-academy-blue-b-5, #0080BB);
+        /* GSI-Effect1 */
+        box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
+        /* typography */
+        color: #FFF;
+        text-align: center;
+        /* Button */
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .want_to_learn_left_content {
+        font-size: 20px;
+    }
+    .line_separate_50 {
+        min-height: 50px;
+        /* border: 1px solid; */
+    }
+    .line_separate_61 {
+        min-height: 61px;
+    }
+    .title_our_courses {
+        font-size: 44px;
+    }
+    .title_training_workshop_right {
+        font-size: 44px;
+    }
+    .context_right_training_workshop {
+        font-size: 20px;
+    }
+    .wrapper_card {
+        min-height: 874px;
+        max-height: 874px;
+        /* border: 1px solid blue; */
+    }
+    .training_workshop_item .row .col {
+        min-height: 770px;
+        /* border: 1px solid; */
+    }
+    .training_workshop_item .card {
+        min-height: 770px;
+        max-height: 770px;
+    }
+    .our_events {
+        min-height: 600px;
+        max-height: 600px;
+        /* padding-top: 61px; */
+    }
+    .event_left_content {
+        min-height: 478px;
+        max-height: 478px;
+        width: 568px;
+        padding-top: 61px;
+        /* border: 3px solid green; */
+        /* padding-top: 61px;  kalau padding , mempersempit ruang div */
+        /* margin-top: 61px; */
+    }
+    .our_events .d-lg-flex img {
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        width: 97%;
+    }
+    .title_events {
+        min-height: 264px;
+        max-height: 264px;
+        min-width: 560px;
+        /* border: 1px solid blue; */
+    }
+    .card_our_events+img {
+        width: 400px;
+        height: 300px;
+    }
+    .our_events_item .row {
+        min-height: 750px;
+        max-height: 750px;
+        border: 1px solid;
+    }
+    .want_to_learn_content .col_left {
+        /* padding-left: 0px; */
+        padding-right: 0px;
+        padding-top: 57.5px;
+    }
+    .want_to_learn_content .col_right img {
+        width: auto
+    }
+    .training_workshop_left {
+        height: 500px;
+        min-height: 500px;
+    }
+    .line_separe_title_course_20 {
+        min-height: 20px;
+    }
+    /* .container-fluid {
+max-width: 1440px;
+} */
+    /* .container {
+
+        
+        max-width: 1540px;
+    } */
+}
+
+@media (min-width: 1919px) {
+    .line_separated {
+        height: 36.471vw;
+    }
+    /* .container {
+        min-width: 1400px;
+    } */
+}
+
+
+/* @media (min-width: 2000px) {
+    .container {
+        min-width: 1200px;
+    }
+} */
