@@ -588,6 +588,7 @@ card>img {
 
 .tgl_course {
     height: 32px;
+    margin-bottom: 0px;
     /* border: 1px solid; */
 }
 
@@ -904,6 +905,7 @@ card>img {
     line-height: 24px;
     /* 120% */
     letter-spacing: 0.1px;
+    margin-bottom: 0px;
 }
 
 .tgl_events {
