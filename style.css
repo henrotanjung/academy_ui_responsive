@@ -482,10 +482,10 @@ card>img {
     height: 54px;
     width: 304px;
     display: flex;
-    padding: 12px 40px;
+    padding: 15px 60px;
     justify-content: center;
     align-items: center;
-    gap: 7px;
+    gap: 10px;
     border-radius: 10px;
     background: var(--gsi-academy-blue-b-5, #0080BB);
     /* GSI-Effect1 */

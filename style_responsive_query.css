@@ -270,11 +270,10 @@ margin-left: 20px;
     }
     .join_our_course {
         height: 54px;
-        width: 304px;
-        display: flex;
+        width: 308px;
+        /* display: flex; */
         padding: 15px 60px;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center; */
         gap: 10px;
         border-radius: 10px;
         background: var(--gsi-academy-blue-b-5, #0080BB);
@@ -282,7 +281,6 @@ margin-left: 20px;
         box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
         /* typography */
         color: #FFF;
-        text-align: center;
         /* Button */
         font-size: 16px;
         font-style: normal;
