@@ -273,6 +273,10 @@ div.wrapper_item_our_popular_program {
     border: 1px solid #cfd7de;
 }
 
+.popular_prog .row .col-md-4 {
+    margin-bottom: 2px;
+}
+
 .item_image_popular_prog {
     width: 100%;
     border-top-right-radius: 10px;
