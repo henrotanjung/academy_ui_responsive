@@ -102,19 +102,38 @@ margin-left: 20px;
 /* large (LG) or dekstop verion */
 
 @media (min-width: 992px) {
-    .container {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
     .banner_header {
-        width: auto;
-        height: 580px;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('img/banner_background_witwhout_text.png') center center no-repeat;
+        /* background-size: auto; */
+        height: 600px;
     }
-    .banner_header>.container {
+    .banner_text_title {
+        /* Layout */
+        /* padding-top: 79px; */
+        width: 520px;
+        gap: 50px;
+        align-self: stretch;
+        /* Typography */
+        color: var(--gsi-academy-blue-b-5, #0080BB);
+        font-family: Poppins;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        /* 66px */
+        letter-spacing: -0.88px;
+    }
+    .banner_text_title span {
+        color: #486284;
+    }
+    /* .banner_header .container {
         padding-top: 79px;
-    }
+    } */
     .line_separated_title_50 {
         min-height: 50px;
+    }
+    .line_separate_79 {
+        min-height: 79px;
     }
     .banner_text {
         background-color: #ffffff00;
@@ -138,9 +157,6 @@ margin-left: 20px;
         /* Button */
         font-size: 16px;
         border-radius: 10px;
-    }
-    .banner_header>.container {
-        padding-top: 79px;
     }
     .line_separated_title_to_text {
         height: 20px;

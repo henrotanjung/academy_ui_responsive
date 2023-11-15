@@ -16,7 +16,21 @@ body {
     background-color: #FFFFFF;
 }
 
-#navbarNavDropdown>ul {
+
+/* #navbarNavDropdown>ul {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+} */
+
+#navbarNavDropdown ul {
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* typography */
+    color: var(--gsi-academy-black-b-3, #333);
+    font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -73,6 +87,10 @@ body {
     width: 27.03vw;
 }
 
+.line_separate_79 {
+    min-height: 39px;
+}
+
 .text_banner_blue {
     color: var(--gsi-academy-blue-b-5, #0080BB);
     font-style: normal;
@@ -83,28 +101,55 @@ body {
 }
 
 .banner_header {
-    /* background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('img/header-background.png') center center no-repeat; */
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('img/header-background.png') center center no-repeat;
-    width: auto;
-    height: 400px;
-    background-size: cover;
-    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('img/banner_only.png') center center no-repeat;
+    /* width: 1400px; */
+    height: 450px;
+    background-size: auto;
+    /* text-align: center; */
 }
 
-.banner_text {
-    background-color: #ffffff00;
-    width: 250px;
-    padding: 0px;
+.banner_text1 {
+    display: flex;
+    width: 520px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
 }
 
-.title_banner {
-    /* font-size: 2.2vw; */
-    font-size: 24px;
-    color: #486284;
+.banner_text_title {
+    /* Layout */
+    /* padding-top: 79px; */
+    width: 420px;
+    gap: 40px;
+    align-self: stretch;
+    /* Typography */
+    color: var(--gsi-academy-blue-b-5, #0080BB);
+    font-family: Poppins;
+    font-size: 34px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
+    /* 66px */
     letter-spacing: -0.88px;
+}
+
+.banner_text_title span {
+    color: #486284;
+}
+
+.banner_text_content {
+    /* Layout */
+    padding-top: 20px;
+    width: 520px;
+    align-self: stretch;
+    /* Typography */
+    color: var(--gsi-academy-black-b-6, #7F7F7F);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
 }
 
 .line_separated_title_button {
@@ -172,10 +217,6 @@ body {
 /* ###################
     ### 1. 1 Our popular program
     ################### */
-
-.banner_header>.container {
-    padding-top: 40px;
-}
 
 .title_our_popular_program {
     position: relative;
