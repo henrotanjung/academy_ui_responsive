@@ -106,13 +106,13 @@ margin-left: 20px;
         padding-left: 0px;
         padding-right: 0px;
     }
-    .banner_header {
+    /* .banner_header {
         width: auto;
         height: 580px;
-    }
-    .banner_header>.container {
+    } */
+    /* .banner_header>.container {
         padding-top: 79px;
-    }
+    } */
     .line_separated_title_50 {
         min-height: 50px;
     }
@@ -138,10 +138,11 @@ margin-left: 20px;
         /* Button */
         font-size: 16px;
         border-radius: 10px;
+        min-height: 24px;
     }
-    .banner_header>.container {
+    /* .banner_header>.container {
         padding-top: 79px;
-    }
+    } */
     .line_separated_title_to_text {
         height: 20px;
     }
