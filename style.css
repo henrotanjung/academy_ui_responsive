@@ -800,6 +800,25 @@ card>img {
     width: 100%;
 }
 
+
+/* .text-truncate-container {
+    width: 250px;
+} */
+
+.text-truncate-container_one_line {
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.text-truncate-container {
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .training_workshop_item .card {
     /* min-height: 770px;
     max-height: 770px; */
@@ -974,6 +993,13 @@ card>img {
     /* 120% */
     letter-spacing: 0.1px;
     margin-bottom: 0px;
+    max-height: 48px;
+    /* min-height: 48px; */
+}
+
+.card-body .harga p {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .card_our_course img {
