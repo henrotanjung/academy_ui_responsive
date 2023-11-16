@@ -402,14 +402,13 @@ max-width: 1440px;
     .line_separated {
         height: 36.471vw;
     }
-    .training_workshop_item .row .col-md {
+    .training_workshop_item .row .col-md-4 {
         padding-left: 5px;
         padding-right: 5px;
     }
     .card_training_workshop_item .card-img-top {
-        height: 300px;
-        width: 375px;
-        ;
+        /* height: 300px; */
+        /* width: 375px; */
     }
     .popular_prog .row .col-md {
         padding-left: 5px;

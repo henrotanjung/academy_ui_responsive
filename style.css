@@ -637,6 +637,11 @@ card>img {
     /* border: 1px solid; */
 }
 
+.tgl_training_workshop {
+    height: 32px;
+    margin-bottom: 0px;
+}
+
 .tgl_course img {
     width: 24px;
     height: 24px;
@@ -776,7 +781,7 @@ card>img {
     letter-spacing: -0.88px;
 }
 
-.training_workshop_item .wrapper_card .row .col-md {
+.training_workshop_item .wrapper_card .row .col-md-4 {
     margin-bottom: 10px;
     /* border: 1px solid blue; */
 }
@@ -947,6 +952,18 @@ card>img {
 }
 
 .card_our_course .card-title {
+    color: #475569;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 120% */
+    letter-spacing: 0.1px;
+    margin-bottom: 0px;
+}
+
+.card_training_workshop_item .card-title {
     color: #475569;
     font-family: Poppins;
     font-size: 20px;
