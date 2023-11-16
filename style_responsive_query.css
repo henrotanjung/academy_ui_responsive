@@ -162,6 +162,8 @@ margin-left: 20px;
         height: 20px;
     }
     .text_course {
+        min-height: 60px;
+        max-height: 60px;
         color: var(--gsi-academy-black-b-6, #7F7F7F);
         font-size: 14px;
         font-style: normal;
@@ -335,8 +337,9 @@ margin-left: 20px;
         /* border: 1px solid; */
     }
     .training_workshop_item .card {
-        min-height: 770px;
-        max-height: 770px;
+        /* the value in figma : 770px */
+        min-height: 725px;
+        max-height: 725px;
     }
     .our_events {
         min-height: 600px;
