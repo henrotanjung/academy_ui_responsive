@@ -1033,6 +1033,24 @@ card>img {
     text-transform: uppercase;
 }
 
+.card_our_events .card-title {
+    color: #475569;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 120% */
+    letter-spacing: 0.1px;
+    margin-bottom: 0px;
+}
+
+.tgl_events {
+    height: 32px;
+    margin-bottom: 0px;
+    /* border: 1px solid; */
+}
+
 
 /* Testimony */
 
