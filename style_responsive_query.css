@@ -365,13 +365,13 @@ margin-left: 20px;
         min-width: 560px;
         /* border: 1px solid blue; */
     }
-    .card_our_events+img {
-        width: 400px;
-        height: 300px;
+    .card_our_events .card-img-top {
+        /* width: auto; */
+        height: 295px;
     }
     .our_events_item .row {
-        min-height: 750px;
-        max-height: 750px;
+        min-height: 745px;
+        max-height: 745px;
         /* border: 1px solid; */
     }
     .want_to_learn_content .col_left {
