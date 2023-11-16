@@ -370,8 +370,8 @@ margin-left: 20px;
         height: 295px;
     }
     .our_events_item .row {
-        min-height: 745px;
-        max-height: 745px;
+        min-height: 750px;
+        max-height: 750px;
         /* border: 1px solid; */
     }
     .btn_our_events_find_out_more {
@@ -396,6 +396,10 @@ margin-left: 20px;
         font-weight: 600;
         line-height: normal;
         text-transform: uppercase;
+    }
+    .our_events_item {
+        /* max-height: 1050px; */
+        /* border: 5px solid; */
     }
     .want_to_learn_content .col_left {
         /* padding-left: 0px; */
@@ -450,6 +454,15 @@ max-width: 1440px;
     .card_our_course .card-img-top {
         height: 300px;
         width: 375px;
+    }
+    /* ###############
+    ### Testimony
+    ################## */
+    .testimony_title {
+        min-width: 800px;
+    }
+    .testimony_title p {
+        width: 647px;
     }
     /* .container {
         min-width: 1400px;

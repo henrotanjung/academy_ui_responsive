@@ -928,7 +928,7 @@ card>img {
 /* our events item */
 
 .our_events_item {
-    min-height: 1100px;
+    /* min-height: 1100px; */
     /* border: 1px solid; */
 }
 
@@ -1115,8 +1115,6 @@ card>img {
 
 .testimony_title {
     /* layout */
-    min-width: 800px;
-    width: 800px;
     padding-left: 0px;
     padding-right: 0px;
     height: 162px;
@@ -1145,7 +1143,6 @@ card>img {
 
 .testimony_title p {
     display: flex;
-    width: 647px;
     height: 67px;
     flex-direction: column;
     justify-content: center;
