@@ -981,6 +981,7 @@ card>img {
     /* 120% */
     letter-spacing: 0.1px;
     margin-bottom: 0px;
+    max-height: 48px;
 }
 
 .card_training_workshop_item .card-title {
