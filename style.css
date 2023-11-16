@@ -903,7 +903,7 @@ card>img {
 
 .our_events_item {
     min-height: 1100px;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .title_our_vents_item {
@@ -934,12 +934,9 @@ card>img {
     height: 66px;
 }
 
-
-/* .our_events_item .row {
-    min-height: 750px;
-    max-height: 750px;
-    border: 1px solid;
-} */
+.our_events_item .row .col-md {
+    padding-bottom: 10px;
+}
 
 
 /* .card_our_course img {
