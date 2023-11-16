@@ -365,14 +365,37 @@ margin-left: 20px;
         min-width: 560px;
         /* border: 1px solid blue; */
     }
-    .card_our_events+img {
-        width: 400px;
-        height: 300px;
+    .card_our_events .card-img-top {
+        /* width: auto; */
+        height: 295px;
     }
     .our_events_item .row {
-        min-height: 750px;
-        max-height: 750px;
+        min-height: 745px;
+        max-height: 745px;
         /* border: 1px solid; */
+    }
+    .btn_our_events_find_out_more {
+        /* Layout */
+        display: inline-flex;
+        padding: 15px 60px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        /* Style */
+        border-radius: 10px;
+        background: var(--gsi-academy-blue-b-5, #0080BB);
+        /* GSI-Effect1 */
+        box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
+        /* typography */
+        color: #FFF;
+        text-align: center;
+        /* Button */
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
     }
     .want_to_learn_content .col_left {
         /* padding-left: 0px; */
