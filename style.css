@@ -660,7 +660,8 @@ card>img {
 ######################## */
 
 .training_workshop_left img {
-    width: 330px;
+    width: 455.609px;
+    height: 500px;
 }
 
 .line_separe_title_course_18 {
@@ -689,11 +690,12 @@ card>img {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.2px;
+    margin-bottom: 0px;
 }
 
 .training_workshop .col_right {
     /* padding-right: 0px; */
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .title_training_workshop_right span {

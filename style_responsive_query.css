@@ -251,12 +251,12 @@ margin-left: 20px;
     }
     .training_workshop {
         height: 600px;
-        border: 1px solid;
+        /* border: 1px solid; */
     }
     .training_workshop .col_right {
         /* padding-right: 0px; */
         padding-left: 0px;
-        border: 1px solid;
+        /* border: 1px solid; */
     }
     .line_separated_100 {
         height: 100px;
