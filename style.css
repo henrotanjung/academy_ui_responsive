@@ -245,6 +245,8 @@ body {
     min-height: 562px;
 }
 
+.card_popular_program .card-title {}
+
 .line_separated_program {
     height: 3.126vw;
     /* border: 2px solid; */
