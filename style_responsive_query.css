@@ -374,6 +374,29 @@ margin-left: 20px;
         max-height: 745px;
         /* border: 1px solid; */
     }
+    .btn_our_events_find_out_more {
+        /* Layout */
+        display: inline-flex;
+        padding: 15px 60px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        /* Style */
+        border-radius: 10px;
+        background: var(--gsi-academy-blue-b-5, #0080BB);
+        /* GSI-Effect1 */
+        box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
+        /* typography */
+        color: #FFF;
+        text-align: center;
+        /* Button */
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+    }
     .want_to_learn_content .col_left {
         /* padding-left: 0px; */
         padding-right: 0px;
