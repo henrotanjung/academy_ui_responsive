@@ -343,6 +343,10 @@ margin-left: 20px;
         max-height: 600px;
         /* padding-top: 61px; */
     }
+    .our_events .row .col_img {
+        padding-top: 32px;
+        padding-left: 50px;
+    }
     .event_left_content {
         min-height: 478px;
         max-height: 478px;
@@ -351,12 +355,6 @@ margin-left: 20px;
         /* border: 3px solid green; */
         /* padding-top: 61px;  kalau padding , mempersempit ruang div */
         /* margin-top: 61px; */
-    }
-    .our_events .d-lg-flex img {
-        padding-top: 30px;
-        padding-left: 30px;
-        padding-bottom: 30px;
-        width: 97%;
     }
     .title_events {
         min-height: 264px;
