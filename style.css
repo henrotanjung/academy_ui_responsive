@@ -659,6 +659,10 @@ card>img {
 ### Training & workshop
 ######################## */
 
+.training_workshop_left {
+    padding-bottom: 10px;
+}
+
 .training_workshop_left img {
     width: 455.609px;
     height: 500px;
