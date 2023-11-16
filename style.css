@@ -605,7 +605,7 @@ card>img {
     /* 66px */
     letter-spacing: -0.88px;
     /* margin-top: 60px; */
-    padding-top: 20px;
+    padding-top: 60px;
 }
 
 .title_our_courses_sub {
@@ -941,6 +941,10 @@ card>img {
     max-height: 300px;
 } */
 
+.wrapper_our_course {
+    background: transparent;
+}
+
 .card_our_course .card-title {
     color: #475569;
     font-family: Poppins;
@@ -951,6 +955,11 @@ card>img {
     /* 120% */
     letter-spacing: 0.1px;
     margin-bottom: 0px;
+}
+
+.card_our_course img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .tgl_events {
