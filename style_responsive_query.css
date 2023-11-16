@@ -214,6 +214,23 @@ margin-left: 20px;
         width: 400px;
         height: 300px;
     }
+    .wrapper_our_course11 {
+        /* background: #F5F9FC; */
+        background: url('img/background_our_course.png');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: cover;
+        /* min-height: 1120px; */
+        /* max-height: 1120px; */
+    }
+    .wrapper_our_course {
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('img/background_our_course.png') center center no-repeat;
+        /* background-size: auto; */
+        /* height: 1200px; */
+        background-size: 1300px 1120px;
+        /* background-size: cover; */
+    }
     .our_course {
         min-height: 1120px;
         max-height: 1120px;
@@ -222,6 +239,7 @@ margin-left: 20px;
     .card_our_course {
         height: 770px;
         min-height: 770px;
+        border-radius: 10px;
     }
     .want_to_learn {
         min-height: 600px;
