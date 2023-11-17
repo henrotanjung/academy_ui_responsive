@@ -1323,6 +1323,100 @@ card>img {
 }
 
 
+/* ###################
+### Our schedule
+###################### */
+
+.row .col-md-6 .shedule_right {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.row .col-md-6 .shedule_right .jadwal {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 0px;
+    padding-top: 10px;
+}
+
+.schedule_right {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.shedule_right .schedule_day {
+    /* position: absolute; */
+    width: 80px;
+    height: 80px;
+    background-color: #f39501;
+    border-radius: 50px;
+    top: 20%;
+    color: white;
+}
+
+.shedule_right .jadwal .jadwal_title {
+    color: var(--gsi-academy-black-b-3, #333);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 100% */
+    letter-spacing: 0.2px;
+    margin-bottom: 0px;
+}
+
+.schedule_right .jadwal .jadwal_sub_title {
+    color: var(--second-text-color, #737373);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.shedule_right .jam span {
+    color: var(--gsi-academy-blue-b-5, #0080BB);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.2px;
+}
+
+.calendar_header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.calendar_weekdays {
+    background: none;
+}
+
+.calendar_weekdays div {
+    color: #9291A5!important;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 111.111% */
+}
+
+.calendar_content {
+    line-height: 2.8;
+}
+
+.calendar_content div.today:after {
+    background: #F39501;
+}
+
+
 /* end body */
 
 .help {}
