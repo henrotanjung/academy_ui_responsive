@@ -1334,7 +1334,6 @@ card>img {
 }
 
 .btn_more_our_schedule {
-    display: flex;
     padding: 10px 20px;
     justify-content: center;
     align-items: center;
