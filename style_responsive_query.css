@@ -438,11 +438,11 @@ margin-left: 20px;
     .our_schedule .row .col-md-6 .card {
         border-radius: 20px;
     }
-    .image_be_part_of_us .col-4 img {
+    .image_be_part_of_us .col-md-4 img {
         width: 300px;
         height: 300px;
     }
-    .image_be_part_of_us .col-4 .image_center {
+    .image_be_part_of_us .col-md-4 .image_center {
         margin-top: 150px;
     }
     .to_part_of_us_context_sub {
