@@ -1422,16 +1422,14 @@ card>img {
 
 .want_to_be_part_of_gsi {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('img/want_to_be_part_background.png') center center no-repeat;
-    margin-top: 100px;
     min-height: 800px;
     background-size: auto;
-    margin-top: -290px;
-    /* text-align: center; */
+    margin-top: -190px;
 }
 
 .image_be_part_of_us .col-md-4 img {
-    /* width: 200px;
-    height: 200px; */
+    width: 200px;
+    height: 200px;
 }
 
 .image_be_part_of_us .col-md-4 .image_center {

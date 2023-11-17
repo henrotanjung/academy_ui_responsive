@@ -438,9 +438,15 @@ margin-left: 20px;
     .our_schedule .row .col-md-6 .card {
         border-radius: 20px;
     }
+    .want_to_be_part_of_gsi {
+        min-height: 800px;
+        background-size: auto;
+        margin-top: -290px;
+        /* text-align: center; */
+    }
     .image_be_part_of_us .col-md-4 img {
-        /* width: 300px;
-        height: 300px; */
+        width: 300px;
+        height: 300px;
     }
     #image_first {
         padding-left: 0px;
