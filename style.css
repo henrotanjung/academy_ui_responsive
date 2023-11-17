@@ -1425,21 +1425,23 @@ card>img {
     margin-top: 100px;
     min-height: 800px;
     background-size: auto;
+    margin-top: -290px;
     /* text-align: center; */
 }
 
 .image_be_part_of_us .col-md-4 img {
-    width: 200px;
-    height: 200px;
+    /* width: 200px;
+    height: 200px; */
 }
 
 .image_be_part_of_us .col-md-4 .image_center {
     margin-top: 90px;
 }
 
-.want_to_be_part_of_gsi {
-    margin-top: -250px;
-}
+
+/* #image_last {
+    margin-left: 35px;
+} */
 
 .line_separated_420 {
     min-height: 420px;
