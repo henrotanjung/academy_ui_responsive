@@ -1350,8 +1350,8 @@ card>img {
 
 .shedule_right .schedule_day {
     /* position: absolute; */
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     background-color: #f39501;
     border-radius: 50px;
     top: 20%;
