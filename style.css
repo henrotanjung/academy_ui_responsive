@@ -1494,6 +1494,20 @@ card>img {
 }
 
 
+/* ###############
+### Footer
+################## */
+
+.footer {
+    border: 1px solid;
+    background-color: #76B6E2;
+}
+
+.line_separated_117 {
+    min-height: 117px;
+}
+
+
 /* end body */
 
 .help {}
