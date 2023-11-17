@@ -1421,6 +1421,75 @@ card>img {
     margin-top: -310px;
 }
 
+.line_separated_420 {
+    min-height: 420px;
+}
+
+.to_part_of_us_context {
+    color: var(--gsi-academy-black-b-3, #333);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 66px */
+    letter-spacing: -0.88px;
+}
+
+.image_be_part_of_us .col-md-4 .image_center {
+    display: none;
+}
+
+.image_be_part_of_us .col-md-4 .image_last {
+    display: none;
+}
+
+.to_part_of_us_context span {
+    color: var(--gsi-academy-blue-b-5, #0080BB);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.88px;
+}
+
+.to_part_of_us_context_sub {
+    color: var(--gsi-academy-black-b-7, #999);
+    /* text-align: center; */
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.want_to_be_part_of_gsi .join_academy_gsi {
+    /* Layout */
+    display: inline-flex;
+    padding: 15px 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* Style */
+    border-radius: 10px;
+    background: var(--gsi-academy-blue-b-5, #0080BB);
+    /* GSI-Effect1 */
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
+    /* Typography */
+    color: #FFF;
+    text-align: center;
+    /* Button */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
 
 /* end body */
 
