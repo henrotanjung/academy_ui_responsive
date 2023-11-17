@@ -496,6 +496,14 @@ max-width: 1440px;
     .testimony_title p {
         width: 647px;
     }
+    /* ###############
+    ### Footer
+    ################## */
+    .footer {
+        border: 1px solid;
+        height: 659px;
+        background-color: #76B6E2;
+    }
     /* .container {
         min-width: 1400px;
     } */
