@@ -427,6 +427,17 @@ margin-left: 20px;
         /* border: 2px solid green; */
         /* padding: 0px; */
     }
+    .sub_title {
+        width: 745px;
+    }
+    .our_schedule {
+        /* height: 902px; */
+        max-height: 902px;
+        /* border: 1px solid; */
+    }
+    .our_schedule .row .col-md-6 .card {
+        border-radius: 20px;
+    }
     /* .container-fluid {
 max-width: 1440px;
 } */
