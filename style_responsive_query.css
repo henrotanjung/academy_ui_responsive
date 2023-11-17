@@ -452,9 +452,6 @@ margin-left: 20px;
     ### Footer
     ################## */
     .footer {
-        border: 1px solid;
-        height: 659px;
-        background-color: #76B6E2;
         text-align: left;
     }
     .footer .footer_wrapper {
