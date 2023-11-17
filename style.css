@@ -1428,8 +1428,17 @@ card>img {
     /* text-align: center; */
 }
 
+.image_be_part_of_us .col-md-4 img {
+    width: 200px;
+    height: 200px;
+}
+
+.image_be_part_of_us .col-md-4 .image_center {
+    margin-top: 90px;
+}
+
 .want_to_be_part_of_gsi {
-    margin-top: -310px;
+    margin-top: -250px;
 }
 
 .line_separated_420 {
