@@ -1323,6 +1323,7 @@ card>img {
 .row .col-md-6 .shedule_right {
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: #F8FBFE;
 }
 
 .row .col-md-6 .shedule_right .jadwal {
@@ -1330,6 +1331,17 @@ card>img {
     margin-bottom: 10px;
     padding-right: 0px;
     padding-top: 10px;
+}
+
+.btn_more_our_schedule {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* Style */
+    border-radius: 10px;
+    border: 1px solid var(--gsi-academy-blue-b-5, #0080BB);
 }
 
 .schedule_right {
