@@ -8,8 +8,13 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/calendar_plugin.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_responsive_query.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Academy</title>
 </head>
@@ -623,6 +628,84 @@
         </div>
 
     </div>
+    <div class="container line_separated_100 border"></div>
+
+    <div class="container">
+        <div class="our_schedule">
+            <div class="our_schedule_title text-center border">
+                <p class="title">Our Schedule</p>
+                <p class="sub_title mx-auto">See our schedules for the year and choose the ones that suit your availability</p>
+            </div>
+            <div class="line_separated_100"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card" style="border-radius: 20px;">
+                        <div class="calendar calendar-first" id="calendar_first">
+                            <div class="calendar_header">
+                                <button class="switch-month switch-left"> <i class="fa fa-chevron-left"></i></button>
+                                <h2></h2>
+                                <button class="switch-month switch-right"> <i class="fa fa-chevron-right"></i></button>
+                            </div>
+                            <div class="calendar_weekdays"></div>
+                            <div class="calendar_content"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-md-flex shedule_right">
+                        <div class="schedule_day d-flex  align-items-center justify-content-center">
+                            <span>02</span>
+                        </div>
+                        <div class="col col-7 jadwal">
+                            <p class="jadwal_title "> ONT Training and Work...</p>
+                            <p class="jadwal_sub_title">Genomics Hub</p>
+                        </div>
+                        <div class="col col-3 mt-2 jam text-right">
+                            <span> 14.00 PM </span>
+                        </div>
+                    </div>
+                    <div class="d-md-flex shedule_right">
+                        <div class="schedule_day d-flex  align-items-center justify-content-center">
+                            <span>02</span>
+                        </div>
+                        <div class="col col-7 jadwal" style="padding-right: 0px;">
+                            <p class="jadwal_title"> ONT Training and Work...</p>
+                            <p class="jadwal_sub_title">Genomics Hub</p>
+                        </div>
+                        <div class="col col-3 mt-2 jam text-right">
+                            <span> 14.00 PM </span>
+                        </div>
+                    </div>
+                    <div class="d-md-flex shedule_right">
+                        <div class="schedule_day d-flex  align-items-center justify-content-center">
+                            <span>02</span>
+                        </div>
+                        <div class="col col-7 jadwal">
+                            <p class="jadwal_title "> ONT Training and Work...</p>
+                            <p class="jadwal_sub_title">Genomics Hub</p>
+                        </div>
+                        <div class="col col-3 mt-2 jam text-right">
+                            <span> 14.00 PM </span>
+                        </div>
+                    </div>
+                    <div class="d-md-flex shedule_right">
+                        <div class="schedule_day d-flex  align-items-center justify-content-center">
+                            <span>02</span>
+                        </div>
+                        <div class="col col-7 jadwal" style="padding-right: 0px;">
+                            <p class="jadwal_title"> ONT Training and Work...</p>
+                            <p class="jadwal_sub_title">Genomics Hub</p>
+                        </div>
+                        <div class="col col-3 mt-2 jam text-right">
+                            <span> 14.00 PM </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <br>
     <br>
 
@@ -630,14 +713,18 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js "></script>
+    <script src="js/popper.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/main.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct " crossorigin="anonymous "></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js " integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+ " crossorigin="anonymous "></script>
     -->
 </body>
 
