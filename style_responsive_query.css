@@ -416,6 +416,17 @@ margin-left: 20px;
     .line_separe_title_course_20 {
         min-height: 20px;
     }
+    .testimony {
+        min-height: 819px;
+        max-height: 819px;
+        /* border: 3px solid; */
+    }
+    .testimony_content {
+        min-height: 684px;
+        max-height: 684px;
+        /* border: 2px solid green; */
+        /* padding: 0px; */
+    }
     /* .container-fluid {
 max-width: 1440px;
 } */
