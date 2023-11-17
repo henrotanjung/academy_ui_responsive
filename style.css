@@ -1498,13 +1498,57 @@ card>img {
 ### Footer
 ################## */
 
+
+/* ###############
+    ### Footer
+    ################## */
+
 .footer {
     border: 1px solid;
     background-color: #76B6E2;
+    text-align: center;
+}
+
+.footer .footer_wrapper {
+    margin-top: 10px;
+    color: white;
+}
+
+.footer .footer_wrapper ul li {
+    padding-bottom: 19px;
+}
+
+.footer .footer_wrapper ul li a {
+    color: #FFFFFF!important;
+    color: var(--gsi-academy-black-white, #FFF);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.heading_title_footer {
+    color: var(--gsi-academy-black-white, #FFF);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+
+.get_touch img {
+    margin-right: 7px;
 }
 
 .line_separated_117 {
     min-height: 117px;
+}
+
+.list-group-item {
+    background-color: #76B6E2;
+    padding: 0px;
 }
 
 
