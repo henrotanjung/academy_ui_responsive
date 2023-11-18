@@ -24,10 +24,10 @@ function update_responsive_navbar(screen_size) {
 }
 
 // var x = window.matchMedia("(max-width: 767px)")
-// var navbar_match_size = window.matchMedia("(max-width: 991px)")
-// myFunction(x) // Call listener function at run time
+var navbar_match_size = window.matchMedia("(max-width: 991px)")
+    // myFunction(x) // Call listener function at run time
 
 
-x.addListener(myFunction) // Attach listener function on state changes
+// x.addListener(myFunction) // Attach listener function on state changes
 update_responsive_navbar(navbar_match_size)
 navbar_match_size.addListener(update_responsive_navbar)
