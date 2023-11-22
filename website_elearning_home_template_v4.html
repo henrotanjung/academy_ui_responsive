@@ -70,10 +70,11 @@
                                 <a href="/web/login" class="btn btn-primary button-login " role="button" id="login">
                             Login</a>
                             </t>
-                            <!-- <t t-if="uid not in (4,None) ">
-                        <a href="/web/session/logout" role="menuitem" data-menu="logout" class="btn btn-primary button-login ">
+
+                            <t t-if="uid not in (4,None) ">
+                                <a href="/web/session/logout" class="btn btn-primary button-login " role="menuitem" data-menu="logout" id="logout">
                             Logout</a>
-                    </t> -->
+                            </t>
                         </li>
                     </ul>
                 </div>
