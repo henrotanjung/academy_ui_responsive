@@ -544,37 +544,19 @@ max-width: 1440px;
         max-height: 790px;
         /* border: 1px solid; */
     }
-    .title_how_does_it_work {
-        color: var(--gsi-academy-blue-yellow-y-1, #F39501);
-        font-family: Poppins;
-        font-size: 44px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 150%;
-        text-align: center;
-        /* 66px */
-        letter-spacing: -0.88px;
+    /* ###################
+    ### Popular course
+    ###################### */
+    .popular_course {
+        min-height: 1118px;
+        /* border: 1px solid; */
     }
-    .title_how_does_it_work>span {
-        color: var(--gsi-academy-black-b-3, #333);
-        font-family: Poppins;
-        font-size: 44px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 150%;
-        letter-spacing: -0.88px;
-    }
-    .how_does_it_work .card_how_does_it_work .card-title {
-        /* typography */
-        color: var(--text-color, #252B42);
-        text-align: center;
-        font-family: Poppins;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 24px;
-        /* 120% */
-        letter-spacing: 0.1px;
+    .popular_course .popular_course_tag {
+        /* min-width: 1084px; */
+        min-height: 246px;
+        /* border: 1px solid; */
+        padding: 0px;
+        max-width: 1084px;
     }
 }
 
