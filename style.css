@@ -1563,3 +1563,67 @@ card>img {
 /* end body */
 
 .help {}
+
+
+/* Styles for wrapping the search box */
+
+.main {
+    width: 50%;
+    margin: 50px auto;
+}
+
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    width: 300px;
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    /* style */
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
+    /* typography */
+    color: #C8C7D1;
+    /* text-align: center; */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+/* .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+} */
+
+.has-search #test {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 550px;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: lightgrey;
+    float: left;
+}
+
+#test img {
+    width: 32px;
+    height: 32px;
+}

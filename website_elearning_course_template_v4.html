@@ -1,0 +1,852 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/calendar_plugin.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_responsive_query.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Academy</title>
+</head>
+
+<body>
+    <div class="container-fluid fixed-top menu_nav" style="position: sticky;">
+        <div class="container " id="navbar_container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand logo-image" href="https://academy.gsilab.id" id="logo_academy">
+                    <img src="https://academy.gsilab.id/img/logo.png" style="background-size: cover; width: 100%;" alt="alternative" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link page-scroll" href="/web/course">Courses <span
+                                class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link page-scroll" href="/web/training_workshop">Training
+                            &amp;
+                            Workshop</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link page-scroll" href="/web/event">Event</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link page-scroll" href="/web/blog">Blog</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link page-scroll" href="/web/about">About</a>
+                        </li>
+                        <!-- <li> <t t-call="website_sale.header_cart_link">
+                        <t t-set="_icon" t-value="True"/>
+                        <t t-set="_item_class" t-value="'nav-item mx-lg-3'"/>
+                        <t t-set="_link_class" t-value="'nav-link'"/>
+                    </t></li>
+                    <li><t t-call="portal.user_dropdown">
+                        <t t-set="_user_name" t-value="true"/>
+                        <t t-set="_item_class" t-value="'nav-item dropdown'"/>
+                        <t t-set="_link_class" t-value="'nav-link'"/>
+                        <t t-set="_dropdown_menu_class" t-value="'dropdown-menu-right'"/>
+                    </t></li> -->
+                    </ul>
+
+
+                    <ul class="navbar-nav">
+                        <li class=" nav-item ">
+                            <!-- <button class="btn btn-primary button-login ">Login</button> -->
+                            <t t-if="uid in (4,None)">
+                                <a href="/web/login" class="btn btn-primary button-login " role="button" id="login">
+                            Login</a>
+                            </t>
+                            <!-- <t t-if="uid not in (4,None) ">
+                        <a href="/web/session/logout" role="menuitem" data-menu="logout" class="btn btn-primary button-login ">
+                            Logout</a>
+                    </t> -->
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- #########################################################
+        ### 1. Body
+        ######################################################### -->
+
+    <!-- ###################
+        ### 1. 1 Banner
+        ################### -->
+    <div class="jumbotron-fluid banner_header_course">
+        <div class="container">
+            <div class="line_separate_79"></div>
+            <div class="banner_text_title_course">
+                Unlock New <span>Skills With Our Courses</span>
+            </div>
+            <div class="banner_text_content">
+                We offer a wide range of courses to level up your skill in life science
+            </div>
+            <div class="line_separate_50"></div>
+
+            <!-- Actual search box -->
+            <div class="form-group has-search">
+                <!-- <span class="fa fa-search form-control-feedback " id="test"></span> -->
+                <span class="form-control-feedback " id="test"> <img src="img/search.png"></span>
+                <input type="text" class="form-control" placeholder="Find Course">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container line_separated_100"></div>
+
+    <!-- <div class="line_separated_banner_popular_prog"></div> -->
+    <!-- ###################
+        ### 1. 1 Our popular program
+        ################### -->
+    <!-- <div class="container-fluid"> -->
+    <div class="container popular_prog">
+        <div class="title_our_popular_program">Our Popular
+            <span>Porgrams</span>
+        </div>
+        <div class="line_separated_program"></div>
+
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card card_popular_program">
+                    <img src="img/lsc1.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <div class="line_separate_card_25"></div>
+                        <div class="card-title text-left text-truncate-container_one_line">Card titleCard titleCard titleCard title</div>
+                        <div class="line_separate_card_25"></div>
+                        <p class="card-text text-left text-truncate-container">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="line_separate_card_25"></div>
+                        <a href="#" class="btn popular">More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card_popular_program">
+                    <img src="img/lsc1.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <div class="line_separate_card_25"></div>
+                        <div class="card-title text-left text-truncate-container_one_line">Card title</div>
+                        <div class="line_separate_card_25"></div>
+                        <p class="card-text text-left text-truncate-container">Some quick example text to build on the card title and make up the bulk of the card's content.>Some quick example text to build on the card title and make up the bulk of the card's content.>Some quick example text to build on the
+                            card title and make up the bulk of the card's content.>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="line_separate_card_25"></div>
+                        <a href="#" class="btn popular">More</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card_popular_program">
+                    <img src="img/lsc1.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <div class="line_separate_card_25"></div>
+                        <div class="card-title text-left text-truncate-container_one_line">Card title</div>
+                        <div class="line_separate_card_25"></div>
+                        <p class="card-text text-left text-truncate-container">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="line_separate_card_25"></div>
+                        <a href="#" class="btn popular">More</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="line_separate_to_pagenation"></div>
+        <div class="row pagenation_popular_prog">
+            <div class="col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="135" height="16" viewBox="0 0 135 16" fill="none">
+                    <circle cx="67.5" cy="8" r="7.5" fill="#DDE0E4"/>
+                    <circle cx="97.5" cy="8" r="7.5" fill="#DDE0E4"/>
+                    <circle cx="127.5" cy="8" r="7.5" fill="#DDE0E4"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.55721 15.4998C7.53816 15.4999 7.51909 15.5 7.5 15.5C7.48091 15.5 7.46184 15.4999 7.44279 15.4998H6.9469V15.4799C3.06303 15.1968 0 11.9561 0 8C0 4.04389 3.06303 0.80319 6.9469 0.520085V0.5H7.5H37.0841V0.511337C37.2218 0.503812 37.3604 0.5 37.5 0.5C41.6421 0.5 45 3.85786 45 8C45 12.1421 41.6421 15.5 37.5 15.5C37.3604 15.5 37.2218 15.4962 37.0841 15.4887V15.4998H7.55721Z" fill="#0080BB"/>
+                  </svg>
+            </div>
+            <div class="col prev_next text-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path d="M23.75 13.7496H8.925L13.4625 8.29961C13.6747 8.04434 13.7768 7.71524 13.7463 7.38471C13.7158 7.05417 13.5553 6.74929 13.3 6.53711C13.0447 6.32494 12.7156 6.22286 12.3851 6.25334C12.0546 6.28381 11.7497 6.44434 11.5375 6.69961L5.2875 14.1996C5.24545 14.2593 5.20785 14.3219 5.175 14.3871C5.175 14.4496 5.175 14.4871 5.0875 14.5496C5.03084 14.6929 5.00118 14.8455 5 14.9996C5.00118 15.1537 5.03084 15.3063 5.0875 15.4496C5.0875 15.5121 5.0875 15.5496 5.175 15.6121C5.20785 15.6773 5.24545 15.74 5.2875 15.7996L11.5375 23.2996C11.655 23.4407 11.8022 23.5542 11.9686 23.632C12.1349 23.7097 12.3164 23.7499 12.5 23.7496C12.7921 23.7502 13.0751 23.6485 13.3 23.4621C13.4266 23.3572 13.5312 23.2283 13.6079 23.0829C13.6846 22.9374 13.7318 22.7783 13.7469 22.6146C13.762 22.4509 13.7447 22.2858 13.6959 22.1288C13.6471 21.9718 13.5678 21.8259 13.4625 21.6996L8.925 16.2496H23.75C24.0815 16.2496 24.3995 16.1179 24.6339 15.8835C24.8683 15.6491 25 15.3311 25 14.9996C25 14.6681 24.8683 14.3501 24.6339 14.1157C24.3995 13.8813 24.0815 13.7496 23.75 13.7496Z" fill="#0080BB"/>
+                  </svg>
+                <span class="item_separate_pagination"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path d="M6.25 13.7496H21.075L16.5375 8.29961C16.3253 8.04434 16.2232 7.71524 16.2537 7.38471C16.2842 7.05417 16.4447 6.74929 16.7 6.53711C16.9553 6.32494 17.2844 6.22286 17.6149 6.25334C17.9454 6.28381 18.2503 6.44434 18.4625 6.69961L24.7125 14.1996C24.7545 14.2593 24.7922 14.3219 24.825 14.3871C24.825 14.4496 24.825 14.4871 24.9125 14.5496C24.9692 14.6929 24.9988 14.8455 25 14.9996C24.9988 15.1537 24.9692 15.3063 24.9125 15.4496C24.9125 15.5121 24.9125 15.5496 24.825 15.6121C24.7922 15.6773 24.7545 15.74 24.7125 15.7996L18.4625 23.2996C18.345 23.4407 18.1978 23.5542 18.0314 23.632C17.8651 23.7097 17.6836 23.7499 17.5 23.7496C17.2079 23.7502 16.9249 23.6485 16.7 23.4621C16.5734 23.3572 16.4688 23.2283 16.3921 23.0829C16.3154 22.9374 16.2682 22.7783 16.2531 22.6146C16.238 22.4509 16.2553 22.2858 16.3041 22.1288C16.3529 21.9718 16.4322 21.8259 16.5375 21.6996L21.075 16.2496H6.25C5.91848 16.2496 5.60054 16.1179 5.36612 15.8835C5.1317 15.6491 5 15.3311 5 14.9996C5 14.6681 5.1317 14.3501 5.36612 14.1157C5.60054 13.8813 5.91848 13.7496 6.25 13.7496Z" fill="#0080BB"/>
+                  </svg>
+            </div>
+        </div>
+    </div>
+    <!-- ###################
+        ### 1.2 Want to learn something
+        ################### -->
+    <div class="container line_separated_100"></div>
+    <div class="container">
+
+        <div class="want_to_learn">
+            <div class="row want_to_learn_content">
+                <div class="col-md-6 col_left">
+                    <div class="want_to_learn_left">Want to Learn Something? <span>Join Our Courses!</span></div>
+                    <div class="line_separe_title_course_20"></div>
+                    <div class="want_to_learn_left_content">GSI Academy Courses provides both Live and Self-Learning courses that provides you with various interesting things to be learnt.</div>
+                    <div class="line_separate_50"></div>
+                    <a href="#" class="btn join_our_course">Join the course now</a>
+
+
+                </div>
+
+                <div class="col-md-6 col_right text-right">
+                    <img src="img/join_our_class.png" class="img_join_our_class" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line_separated_100"></div>
+
+    <!-- ###################
+        ### 1.3 Our courses
+        ################### -->
+    <div class="container-fluid wrapper_our_course">
+        <div class="container our_course">
+            <div class="title_our_courses">Our
+                <span class="title_our_courses_sub">Courses</span>
+            </div>
+            <div class="line_separated_program"></div>
+
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card card_our_course">
+                        <img src="img/lsc1.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <div class="line_separate_card_25"></div>
+                            <div class="card-title text-left text-truncate-container_one_line">Card titleCard titleCard titleCard titleCard title</div>
+                            <div class="line_separate_card_25"></div>
+                            <p class="tgl_course text-left"><img src="img/tgl_icon.png" alt=""><span class="tgl_text"> 24, 30 March & 6 April 2023</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <p class="tgl_course text-left"><img src="img/Layers.png" alt=""><span class="tgl_text"> 3 session</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <div class="text_course text-left text-truncate-container">This live short course provides knowledge ranging from the introduction to medical statistics, hypothesis testing and parametric...</div>
+                            <div class="line_separate_card_25"></div>
+                            <div class="d-flex harga">
+                                <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                                <p style="margin-left: auto;" class="harga_setelah_disc ">IDR 270.000</p>
+                            </div>
+                            <div class="line_separate_50"></div>
+                            <a href="#" class="btn btn_our_course">Find out more</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card_our_course">
+                        <img src="img/lsc1.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <div class="line_separate_card_25"></div>
+                            <div class="card-title text-left text-truncate-container_one_line">Card title</div>
+                            <div class="line_separate_card_25"></div>
+                            <p class="tgl_course text-left"><img src="img/tgl_icon.png" alt=""><span class="tgl_text"> 24, 30 March & 6 April 2023</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <p class="tgl_course text-left"><img src="img/Layers.png" alt=""><span class="tgl_text"> 3 session</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <div class="text_course text-left text-truncate-container">This live short course provides knowledge ranging from the introduction to medical statistics, hypothesis testing and parametric...</div>
+                            <div class="line_separate_card_25"></div>
+                            <div class="d-flex harga">
+                                <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                                <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                            </div>
+                            <div class="line_separate_50"></div>
+                            <a href="#" class="btn btn_our_course">Find out more</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card_our_course">
+                        <img src="img/lsc1.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <div class="line_separate_card_25"></div>
+                            <div class="card-title text-left text-truncate-container_one_line">Card title</div>
+                            <div class="line_separate_card_25"></div>
+                            <p class="tgl_course text-left"><img src="img/tgl_icon.png" alt=""><span class="tgl_text"> 24, 30 March & 6 April 2023</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <p class="tgl_course text-left"><img src="img/Layers.png" alt=""><span class="tgl_text"> 3 session</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <div class="text_course text-left text-truncate-container">This live short course provides knowledge ranging from the introduction to medical statistics, hypothesis testing and parametric...</div>
+                            <div class="line_separate_card_25"></div>
+                            <div class="d-flex harga">
+                                <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                                <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                            </div>
+                            <div class="line_separate_50"></div>
+                            <a href="#" class="btn btn_our_course">Find out more</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="line_separate_50"></div>
+            <div class="text-center">
+                <a href="#" class="btn btn_our_course_find_out_more">Find out more</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="line_separated_100"></div>
+
+    <!-- ###################
+        ### 1.3 Our Join our training & workshop
+        ################### -->
+    <div class="container training_workshop">
+        <div class="line_separate_50"></div>
+        <div class="row">
+            <div class="col-md-5 training_workshop_left">
+                <img src="img/training_workshop.png" alt="">
+            </div>
+            <div class="col-md-7 col_right">
+                <div class="title_training_workshop_right"> Want to learn and Do Real Laboratory and Life Science Practice? <span class="">Join Our Training and Workshop!</span>
+
+                </div>
+                <div class="line_separe_title_course_20"></div>
+                <p class="context_right_training_workshop"> GSI Academy Training and Workshop provides Offline and Hands-on practices training that offers you a real hands-on experience of a lot of laboratories and life sciences field.
+                </p>
+                <div class="line_separate_50"></div>
+                <a href="#" class="btn btn_joining_training_now">join training now</a></div>
+        </div>
+
+    </div>
+
+    <div class="line_separated_100"></div>
+
+    <!-- ###################
+        ### 1.3 Our Join our training & workshop course item
+        ################### -->
+    <div class="container training_workshop_item">
+        <div class="line_separate_hight_60"></div>
+        <div class="title_training_and_workshop_item">Our
+            <span class="title_training_and_workshop_item_sub">Training & Workshop</span>
+        </div>
+        <div class="line_separate_hight_60"></div>
+        <div class="wrapper_card">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card card_training_workshop_item">
+                        <img src="img/lsc1.png" class="card-img-top img-fluid" alt="...">
+
+                        <div class="card-body">
+                            <div class="line_separate_card_25"></div>
+                            <div class="card-title text-left">Card title</div>
+                            <div class="line_separate_card_25"></div>
+                            <p class="tgl_training_workshop training_and_workshop_item text-left"><img src="img/tgl_icon.png" alt=""><span class="tgl_text"> 24, 30 March & 6 April 2023</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <p class="tgl_training_workshop training_and_workshop_item text-left"><img src="img/Location.png" alt=""><span class="location_text"> Genomics Hub</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <div class="text_course text-left text-truncate-container">
+                                This training will help you to know and understand what to do withThis training will help you to know and understand what to do withThis training will help you to know andand understand what to do withThis training will help you to know andand understand
+                                what to do withThis training will help you to know andand understand what to do withThis training will help you to know and
+                            </div>
+
+                            <div class="line_separate_card_25"></div>
+                            <div class="d-flex harga">
+                                <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                                <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                            </div>
+                            <div class="line_separate_50"></div>
+                            <!-- <div class="line_separate_height_10"></div> -->
+                            <a href="#" class="btn btn_our_course">Find out more</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card_training_workshop_item">
+                        <img src="img/lsc1.png" class="card-img-top img-fluid" alt="...">
+
+                        <div class="card-body">
+                            <div class="line_separate_card_25"></div>
+                            <div class="card-title text-left">Card title</div>
+                            <div class="line_separate_card_25"></div>
+                            <p class="tgl_training_workshop training_and_workshop_item text-left"><img src="img/tgl_icon.png" alt=""><span class="tgl_text"> 24, 30 March & 6 April 2023</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <p class="tgl_training_workshop training_and_workshop_item text-left"><img src="img/Location.png" alt=""><span class="location_text"> Genomics Hub</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <div class="text_course text-left text-truncate-container">This training will help you to know and understand what to do with your data after your Next Generation Sequencing process is finished.</div>
+                            <div class="line_separate_card_25"></div>
+
+                            <div class="d-flex harga">
+                                <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                                <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                            </div>
+                            <!-- <div class="line_separate_height_10"></div> -->
+                            <div class="line_separate_50"></div>
+                            <a href="#" class="btn btn_our_course">Find out more</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card_training_workshop_item">
+                        <img src="img/lsc1.png" class="card-img-top img-fluid" alt="...">
+
+                        <div class="card-body">
+                            <div class="line_separate_card_25"></div>
+                            <div class="card-title text-left text-truncate-container_one_line">Card titleCard titleCard titleCard titleCard titleCard titleCard titleCard titleCard titleCard titleCard titleCard titleCard titleCard titleCard titleCard titleCard titleCard titleCard titleCard titleCard titleCard titleCard
+                                titleCard title</div>
+                            <div class="line_separate_card_25"></div>
+                            <p class="tgl_training_workshop training_and_workshop_item text-left"><img src="img/tgl_icon.png" alt=""><span class="tgl_text"> 24, 30 March & 6 April 2023</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <p class="tgl_training_workshop training_and_workshop_item text-left"><img src="img/Location.png" alt=""><span class="location_text"> Genomics Hub</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <div class="text_course text-left text-truncate-container">This training will help you to know and understand what to do with your data after your Next Generation Sequencing process is finished.</div>
+                            <div class="line_separate_card_25"></div>
+                            <div class="d-flex harga">
+                                <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                                <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                            </div>
+                            <!-- <div class="line_separate_height_10"></div> -->
+                            <div class="line_separate_50"></div>
+
+                            <a href="#" class="btn btn_our_course">Find out more</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line_separate_50"></div>
+            <div class="text-center">
+                <a href="#" class="btn btn_our_course_find_out_more">See more</a>
+            </div>
+            <div class="line_separate_hight_60"></div>
+        </div>
+    </div>
+
+    <div class="line_separated_100"></div>
+
+    <!-- ###################
+        ### 1.4 Our events
+        ################### -->
+
+    <div class="container our_events">
+        <div class="row">
+            <div class="col-md-6 event_left_content">
+                <div class="title_events">
+                    Want to involve in real live situation, get new knowledge and networks? <span>Join our Events!</span>
+                </div>
+                <div class="content_events">
+                    GSI Academy Events gives you opportunities to have more knowledge and perspective from live sessions as well as more networks.
+                </div>
+                <div class="line_separate_50"></div>
+                <a href="#" class="btn btn_join_our_events">Join our Events</a>
+
+            </div>
+            <div class="col-md-6 col_img">
+                <img src="img/ikuti_secara_praktis_dan_mudah.png" alt="" class="img-fluid"></div>
+
+
+        </div>
+    </div>
+
+    <div class="line_separated_100"></div>
+    <!-- ###################
+        ### 1.4.1 Our events items
+        ################### -->
+    <div class="container our_events_item">
+        <div class="title_our_vents_item mx-auto">Our <span>Events</span></div>
+        <div class="separate_line_66"></div>
+
+        <div class="row text-center">
+            <div class="col-md">
+                <div class="card card_our_events">
+                    <img src="img/event1.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <div class="line_separate_card_25"></div>
+                        <div class="card-title text-left text-truncate-container_one_line">GSI Academy Webinar...</div>
+                        <div class="line_separate_card_25"></div>
+                        <p class="tgl_events text-left"><img src="img/tgl_icon.png" alt=""><span class="tgl_text"> 24, 30 March & 6 April 2023</span></p>
+                        <div class="line_separate_card_25"></div>
+                        <p class="training_and_workshop_item text-left"><img src="img/Location.png" alt=""><span class="location_text"> Online via Zoom</span></p>
+                        <div class="line_separate_card_25"></div>
+                        <div class="text_events text-left text-truncate-container">This live short course provides knowledge ranging from the introduction to medical statistics, hypothesis testing and parametric...</div>
+                        <div class="line_separate_card_25"></div>
+                        <div class="d-flex harga">
+                            <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                            <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                        </div>
+                        <div class="line_separate_50"></div>
+                        <a href="#" class="btn btn_our_course">Find out more</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card card_our_events">
+                    <img src="img/event1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="line_separate_card_25"></div>
+                        <div class="card-title text-left text-truncate-container_one_line">GSI Academy Webinar...</div>
+                        <div class="line_separate_card_25"></div>
+                        <p class="tgl_events text-left"><img src="img/tgl_icon.png" alt=""><span class="tgl_text"> 24, 30 March & 6 April 2023</span></p>
+                        <div class="line_separate_card_25"></div>
+                        <p class="training_and_workshop_item text-left"><img src="img/Location.png" alt=""><span class="location_text"> Online via Zoom</span></p>
+                        <div class="line_separate_card_25"></div>
+                        <div class="text_events text-left text-truncate-container">This live short course provides knowledge ranging from the introduction to medical statistics, hypothesis testing and parametric...</div>
+                        <div class="line_separate_card_25"></div>
+                        <div class="d-flex harga">
+                            <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                            <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                        </div>
+                        <div class="line_separate_50"></div>
+                        <a href="#" class="btn btn_our_course">Find out more</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card card_our_events">
+                    <img src="img/event1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="line_separate_card_25"></div>
+                        <div class="card-title text-left text-truncate-container_one_line">GSI Academy Webinar...</div>
+                        <div class="line_separate_card_25"></div>
+                        <p class="tgl_events text-left"><img src="img/tgl_icon.png" alt=""><span class="tgl_text"> 24, 30 March & 6 April 2023</span></p>
+                        <div class="line_separate_card_25"></div>
+                        <p class="training_and_workshop_item text-left"><img src="img/Location.png" alt=""><span class="location_text"> Online via Zoom</span></p>
+                        <div class="line_separate_card_25"></div>
+                        <div class="text_events text-left text-truncate-container">This live short course provides knowledgearametriclive short course provides knowledge ranging from the introduction to medical statistics, hypothesis testing and parametric</div>
+                        <div class="line_separate_card_25"></div>
+                        <div class="d-flex harga">
+                            <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                            <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                        </div>
+                        <div class="line_separate_50"></div>
+                        <a href="#" class="btn btn_our_course">Find out more</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="line_separate_50"></div>
+        <div class="text-center">
+            <a href="#" class="btn btn_our_events_find_out_more">See more</a>
+        </div>
+        <div class="line_separate_hight_60"></div>
+
+    </div>
+
+
+    <div class="line_separated_100"></div>
+    <!-- ###################
+        ### 1.5 Testimony
+        ################### -->
+    <div class="container testimony">
+        <div class="line_separate_61"></div>
+        <div class="testimony_content">
+            <div class="testimony_title mx-auto">
+                TESTIMONY <span>from our participants</span>
+                <div class="line_separate_45"></div>
+                <p class="mx-auto">Go through what our past participants have said about GSI Academy programs and join them in learning with GSI Academy</p>
+            </div>
+            <div class="line_separate_hight_60"></div>
+            <div class="row">
+                <div class="col-md profile_testimony_col">
+                    <div class="profile_testimony">
+                        <div class="dot_40 testimony_dot_40">M</div>
+                        <div class="detail_testimony">
+                            <p class="nama_testimony">Mario Donald Bani</p>
+                            <p class="alamat_testimony">Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="testimony_comment"> "I genuinely enjoyed the hands on experience conducted through the session. However, it would be great if the material can also include what 16S sequence is, why is it targeted, and what the level of conservation of this sequence
+                            in bacterial kingdom."
+                        </p>
+                        <div class="line_separated_30"></div>
+                        <p>Testimony from "Training Series: 16s Bacterial Sequencing using ONT"</p>
+                    </div>
+                </div>
+                <div class="col-md profile_testimony_middle_col">
+                    <div class="profile_testimony_middle">
+                        <div class="dot_40 testimony_dot_40">M</div>
+                        <div class="detail_testimony">
+                            <p class="nama_testimony">Mario Donald Bani</p>
+                            <p class="alamat_testimony">Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="testimony_comment"> "GSI memberikan peluang dengan memfasilitasi kesempatan belajar lebih banyak mengenai 16S Bacterial Sequencing dengan ONT"
+                        </p>
+                        <div class="line_separated_30"></div>
+                        <p>testimony from "Training Series: 16s Bacterial Sequencing using ONT"</p>
+                    </div>
+                </div>
+                <div class="col-md profile_testimony_col">
+                    <div class="profile_testimony">
+                        <div class="dot_40 testimony_dot_40">M</div>
+                        <div class="detail_testimony">
+                            <p class="nama_testimony">Mario Donald Bani</p>
+                            <p class="alamat_testimony">Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="testimony_comment"> "Acara yang diadakan sudah sangat baik...terima kasih untuk para narasumber atas sharing ilmu nya..."
+                        </p>
+                        <div class="line_separated_30"></div>
+                        <p>testimony from "Training Series: ONT Post-NGS Workflow & Analysis"</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="line_separate_to_pagenation_32"></div>
+        <div class="row pagenation_popular_prog">
+            <div class="col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="135" height="16" viewBox="0 0 135 16" fill="none">
+                    <circle cx="67.5" cy="8" r="7.5" fill="#DDE0E4"/>
+                    <circle cx="97.5" cy="8" r="7.5" fill="#DDE0E4"/>
+                    <circle cx="127.5" cy="8" r="7.5" fill="#DDE0E4"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.55721 15.4998C7.53816 15.4999 7.51909 15.5 7.5 15.5C7.48091 15.5 7.46184 15.4999 7.44279 15.4998H6.9469V15.4799C3.06303 15.1968 0 11.9561 0 8C0 4.04389 3.06303 0.80319 6.9469 0.520085V0.5H7.5H37.0841V0.511337C37.2218 0.503812 37.3604 0.5 37.5 0.5C41.6421 0.5 45 3.85786 45 8C45 12.1421 41.6421 15.5 37.5 15.5C37.3604 15.5 37.2218 15.4962 37.0841 15.4887V15.4998H7.55721Z" fill="#0080BB"/>
+                  </svg>
+            </div>
+            <div class="col prev_next text-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path d="M23.75 13.7496H8.925L13.4625 8.29961C13.6747 8.04434 13.7768 7.71524 13.7463 7.38471C13.7158 7.05417 13.5553 6.74929 13.3 6.53711C13.0447 6.32494 12.7156 6.22286 12.3851 6.25334C12.0546 6.28381 11.7497 6.44434 11.5375 6.69961L5.2875 14.1996C5.24545 14.2593 5.20785 14.3219 5.175 14.3871C5.175 14.4496 5.175 14.4871 5.0875 14.5496C5.03084 14.6929 5.00118 14.8455 5 14.9996C5.00118 15.1537 5.03084 15.3063 5.0875 15.4496C5.0875 15.5121 5.0875 15.5496 5.175 15.6121C5.20785 15.6773 5.24545 15.74 5.2875 15.7996L11.5375 23.2996C11.655 23.4407 11.8022 23.5542 11.9686 23.632C12.1349 23.7097 12.3164 23.7499 12.5 23.7496C12.7921 23.7502 13.0751 23.6485 13.3 23.4621C13.4266 23.3572 13.5312 23.2283 13.6079 23.0829C13.6846 22.9374 13.7318 22.7783 13.7469 22.6146C13.762 22.4509 13.7447 22.2858 13.6959 22.1288C13.6471 21.9718 13.5678 21.8259 13.4625 21.6996L8.925 16.2496H23.75C24.0815 16.2496 24.3995 16.1179 24.6339 15.8835C24.8683 15.6491 25 15.3311 25 14.9996C25 14.6681 24.8683 14.3501 24.6339 14.1157C24.3995 13.8813 24.0815 13.7496 23.75 13.7496Z" fill="#0080BB"/>
+                  </svg>
+                <span class="item_separate_pagination"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path d="M6.25 13.7496H21.075L16.5375 8.29961C16.3253 8.04434 16.2232 7.71524 16.2537 7.38471C16.2842 7.05417 16.4447 6.74929 16.7 6.53711C16.9553 6.32494 17.2844 6.22286 17.6149 6.25334C17.9454 6.28381 18.2503 6.44434 18.4625 6.69961L24.7125 14.1996C24.7545 14.2593 24.7922 14.3219 24.825 14.3871C24.825 14.4496 24.825 14.4871 24.9125 14.5496C24.9692 14.6929 24.9988 14.8455 25 14.9996C24.9988 15.1537 24.9692 15.3063 24.9125 15.4496C24.9125 15.5121 24.9125 15.5496 24.825 15.6121C24.7922 15.6773 24.7545 15.74 24.7125 15.7996L18.4625 23.2996C18.345 23.4407 18.1978 23.5542 18.0314 23.632C17.8651 23.7097 17.6836 23.7499 17.5 23.7496C17.2079 23.7502 16.9249 23.6485 16.7 23.4621C16.5734 23.3572 16.4688 23.2283 16.3921 23.0829C16.3154 22.9374 16.2682 22.7783 16.2531 22.6146C16.238 22.4509 16.2553 22.2858 16.3041 22.1288C16.3529 21.9718 16.4322 21.8259 16.5375 21.6996L21.075 16.2496H6.25C5.91848 16.2496 5.60054 16.1179 5.36612 15.8835C5.1317 15.6491 5 15.3311 5 14.9996C5 14.6681 5.1317 14.3501 5.36612 14.1157C5.60054 13.8813 5.91848 13.7496 6.25 13.7496Z" fill="#0080BB"/>
+                  </svg>
+            </div>
+        </div>
+
+    </div>
+    <div class="container line_separated_100"></div>
+
+    <div class="container">
+        <div class="our_schedule">
+            <div class="our_schedule_title text-center ">
+                <p class="title">Our Schedule</p>
+                <p class="sub_title mx-auto">See our schedules for the year and choose the ones that suit your availability</p>
+            </div>
+            <div class="line_separated_100"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="calendar calendar-first" id="calendar_first">
+                            <div class="calendar_header">
+                                <button class="switch-month switch-left"> <i class="fa fa-chevron-left"></i></button>
+                                <h2></h2>
+                                <button class="switch-month switch-right"> <i class="fa fa-chevron-right"></i></button>
+                            </div>
+                            <div class="calendar_weekdays"></div>
+                            <div class="calendar_content"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="d-flex shedule_right text-left">
+                        <div class="schedule_day d-flex  align-items-center justify-content-center">
+                            <span>02</span>
+                        </div>
+                        <div class="col col-7 jadwal">
+                            <p class="jadwal_title "> ONT Training and Work...</p>
+                            <p class="jadwal_sub_title">Genomics Hub</p>
+                        </div>
+                        <div class="col col-3 mt-2 jam text-right">
+                            <span> 14.00 PM </span>
+                        </div>
+                    </div>
+                    <div class="d-flex shedule_right text-left">
+                        <div class="schedule_day d-flex  align-items-center justify-content-center">
+                            <span>02</span>
+                        </div>
+                        <div class="col col-7 jadwal" style="padding-right: 0px;">
+                            <p class="jadwal_title"> ONT Training and Work...</p>
+                            <p class="jadwal_sub_title">Genomics Hub</p>
+                        </div>
+                        <div class="col col-3 mt-2 jam text-right">
+                            <span> 14.00 PM </span>
+                        </div>
+                    </div>
+                    <div class="d-flex shedule_right text-left">
+                        <div class="schedule_day d-flex  align-items-center justify-content-center">
+                            <span>02</span>
+                        </div>
+                        <div class="col col-7 jadwal">
+                            <p class="jadwal_title "> ONT Training and Work...</p>
+                            <p class="jadwal_sub_title">Genomics Hub</p>
+                        </div>
+                        <div class="col col-3 mt-2 jam text-right">
+                            <span> 14.00 PM </span>
+                        </div>
+                    </div>
+                    <div class="d-flex shedule_right text-left">
+                        <div class="schedule_day d-flex  align-items-center justify-content-center">
+                            <span>02</span>
+                        </div>
+                        <div class="col col-7 jadwal" style="padding-right: 0px;">
+                            <p class="jadwal_title"> ONT Training and Work...</p>
+                            <p class="jadwal_sub_title">Genomics Hub</p>
+                        </div>
+                        <div class="col col-3 mt-2 jam text-right">
+                            <span> 14.00 PM </span>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-outline-primary btn_more_our_schedule ml-auto">More ></a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container line_separated_100"></div>
+    <div class="container ">
+        <div class="container line_separated_100"></div>
+        <div class="row image_be_part_of_us">
+            <div class="col-md-4 d-none d-md-block" id="image_first_col"><img src="img/be_part_of_1.png" alt="" id="image_first"></div>
+            <div class="col-md-4 text-center" id="image_center_col"><img src="img/be_part_of_2.png" alt="" id="image_center" class="image_center"></div>
+            <div class="col-md-4 text-right d-none d-md-block" id="image_last_col"><img src="img/be_part_of_3.png" alt="" id="image_last" class="image_last"></div>
+        </div>
+    </div>
+    <div class="want_to_be_part_of_gsi text-center">
+        <div class="container line_separated_420"></div>
+        <p class="to_part_of_us_context">Want To Be Part Of <span>GSI Academy?</span></p>
+
+        <p class="to_part_of_us_context_sub m-auto">Join us as facilitators and trainers or partners in contributing and sharing knowledge for the society</p>
+        <div class="container line_separated_100"></div>
+        <a href="" class="btn join_academy_gsi m-auto ">Join as GSI Academy partner</a>
+
+    </div>
+    <!-- <div class="container line_separated_100"></div> -->
+
+    <div class="container-fluid footer ">
+        <div class="line_separated_117 "></div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-3"><img src="https://academy.gsilab.id/img/logo.png " alt="alternative" /></div>
+                <div class="col-md-3">
+                    <div class="ml-auto footer_wrapper" id="menu">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item heading_title_footer" id="title_menu_footer">
+                                Menu</li>
+                            <li class="list-group-item"><a href="#">
+                                Course and Workshop</a></li>
+                            <li class="list-group-item"><a href="#">
+                                Research</a></li>
+                            <li class="list-group-item"><a href="#">
+                                Blog</a></li>
+                            <li class="list-group-item"><a href="#">
+                                Event</a></li>
+                            <li class="list-group-item"><a href="#">
+                                About</a></li>
+                            <li class="list-group-item"><a href="#">Privacy Policy</a></li>
+                            <li class="list-group-item"><a href="#">Terms
+                                &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="ml-auto footer_wrapper" id="office_hour">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item heading_title_footer" id="title_menu_footer">
+                                Office Hour</li>
+                            <li class="list-group-item">
+                                Monday - Friday <br /> 08.30 - 17.30</li>
+                            <li class="list-group-item heading_title_footer">
+                                Location</li>
+                            <li class="list-group-item">
+                                Genomics Hub<br/> Jl. Sultan Agung No.29,<br/> Guntur, Setiabudi,<br/> Jakarta Selatan, DKI Jakarta<br/> 12980
+                            </li>
+                            <li class="list-group-item heading_title_footer">Get in Touch</li>
+                            <li class="list-group-item get_touch">
+                                <div class="d-md-flex">
+                                    <img src="https://academy.gsilab.id/img/email.png " style="width: 24px; " />
+                                    <div> GSIAcademy@gsilab.id</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item get_touch">
+                                <div class="d-md-flex">
+                                    <a href="https://wa.me/081119230640">
+                                        <img src="https://academy.gsilab.id/img/wa_icon.png " style="width: 24px; " />
+                                    </a>
+                                    <div> 0811 1923 0640</div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="ml-auto footer_wrapper" id="social_media">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item heading_title_footer" id="title_menu_footer">
+                                Follow for More</li>
+                        </ul>
+                        <span class="fa-stack " style="font-size: 1.0rem; ">
+                                <a href="https://www.instagram.com/gsilab.id/">
+                                    <img src="https://academy.gsilab.id/img/ig.png " style="width: 24px; " />
+
+                                </a>
+                            </span>
+                        <span class="fa-stack " style="font-size: 1.0rem; ">
+                                <a href="https://www.facebook.com/GSILAB.ID/">
+                                    <img src="https://academy.gsilab.id/img/fb.png " style="width: 24px; " />
+                                </a>
+                            </span>
+                        <span class="fa-stack " style="font-size: 1.0rem; ">
+                                <a href="#your-link ">
+                                    <img src="https://academy.gsilab.id/img/spotify.png " style="width: 24px; " />
+                                </a>
+                            </span>
+                        <span class="fa-stack " style="font-size: 1.0rem; ">
+                                <a href="https://id.linkedin.com/company/gsi-lab">
+                                    <img src="https://academy.gsilab.id/img/linkdin.png " style="width: 24px; " />
+                                </a>
+                            </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="js/jquery.min.js "></script>
+    <script src="js/popper.js "></script>
+    <!-- <script src="js/bootstrap.min.js "></script> -->
+    <script src="js/main.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct " crossorigin="anonymous "></script>
+    <script src="my_js.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js " integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+ " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>
