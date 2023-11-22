@@ -814,6 +814,13 @@ card>img {
     overflow: hidden;
 }
 
+.text-truncate-container_two_line {
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .text-truncate-container {
     -webkit-line-clamp: 3;
     display: -webkit-box;
@@ -1659,4 +1666,43 @@ card>img {
 #searc_icon img {
     width: 32px;
     height: 32px;
+}
+
+.how_does_it_work .row .col-md-4 {
+    padding: 30px;
+}
+
+.title_how_does_it_work {
+    color: var(--gsi-academy-blue-yellow-y-1, #F39501);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+    /* 66px */
+    letter-spacing: -0.88px;
+}
+
+.title_how_does_it_work>span {
+    color: var(--gsi-academy-black-b-3, #333);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.88px;
+}
+
+.how_does_it_work .card_how_does_it_work .card-title {
+    /* typography */
+    color: var(--text-color, #252B42);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 120% */
+    letter-spacing: 0.1px;
 }
