@@ -719,7 +719,7 @@ card>img {
 }
 
 .line_separe_title_course_60 {
-    min-width: 60px;
+    min-height: 60px;
 }
 
 .line_separate_hight_60 {
@@ -1705,4 +1705,124 @@ card>img {
     line-height: 24px;
     /* 120% */
     letter-spacing: 0.1px;
+}
+
+.popular_course_tag .col {
+    padding: 0px;
+}
+
+.popular_course_tag .col span {
+    /* Layout */
+    display: inline-block;
+    padding: 10px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    text-align: center;
+    /* style */
+    border-radius: 100px;
+    background: #F8FBFE;
+    /* typography */
+    color: var(--gsi-academy-black-b-3, #333);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 30px */
+    letter-spacing: -0.4px;
+}
+
+.title_popular_courses {
+    color: var(--gsi-academy-black-b-3, #333);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 66px */
+    letter-spacing: -0.88px;
+}
+
+.title_popular_courses span {
+    color: var(--gsi-academy-blue-b-5, #0080BB);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.88px;
+}
+
+.discount_percentage {
+    /* Layout */
+    display: flex;
+    padding: 2px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* Style */
+    border-radius: 10px;
+    background: var(--gsi-academy-blue-yellow-y-1, #F39501);
+    /* Typography */
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.2px;
+}
+
+.star_review {
+    height: 32px;
+    margin-bottom: 0px;
+}
+
+.star_review img {
+    height: 28px;
+    width: 28px;
+    margin-bottom: 0px;
+}
+
+.star_review span {
+    display: inline-block;
+    color: #475569;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.1px;
+    margin-left: 10px;
+    padding-top: 1px;
+}
+
+.layers img {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+#layers_popular_course_text {
+    color: #475569;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.1px;
+    margin-left: 10px!important;
+}
+
+.card_popular_course_item {
+    border-radius: 10px;
+}
+
+.card_popular_course_item .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
