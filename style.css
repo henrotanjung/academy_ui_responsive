@@ -1562,7 +1562,10 @@ card>img {
 
 /* end body */
 
-.help {}
+
+/* ################
+### Course page
+################### */
 
 
 /* Styles for wrapping the search box */
@@ -1570,6 +1573,36 @@ card>img {
 .main {
     width: 50%;
     margin: 50px auto;
+}
+
+.banner_header_course {
+    /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('img/course_banner.png') center center no-repeat; */
+    /* height: 715.53px; */
+}
+
+.banner_text_title_course {
+    width: 520px;
+    gap: 50px;
+    align-self: stretch;
+    /* typography */
+    color: var(--gsi-academy-blue-b-5, #0080BB);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 66px */
+    letter-spacing: -0.88px;
+}
+
+.banner_text_title_course span {
+    color: var(--gsi-academy-black-b-3, #333);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.88px;
 }
 
 
@@ -1610,7 +1643,7 @@ card>img {
     color: #aaa;
 } */
 
-.has-search #test {
+.has-search #searc_icon {
     position: absolute;
     z-index: 2;
     display: block;
@@ -1623,7 +1656,7 @@ card>img {
     float: left;
 }
 
-#test img {
+#searc_icon img {
     width: 32px;
     height: 32px;
 }
