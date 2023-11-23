@@ -548,7 +548,7 @@ max-width: 1440px;
     ### Popular course
     ###################### */
     .popular_course {
-        min-height: 1118px;
+        min-height: 1000px;
         /* border: 1px solid; */
     }
     .popular_course .popular_course_tag {
@@ -557,6 +557,16 @@ max-width: 1440px;
         /* border: 1px solid; */
         padding: 0px;
         max-width: 1084px;
+    }
+    .dibimbing_mentor_berpengalaman_text {
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('img/dibimbing.png') center center no-repeat;
+        min-height: 646px;
+        /* width: 1440px; */
+        background-size: auto;
+        margin-top: -410px;
+    }
+    .line_separated_420_cp {
+        min-height: 420px;
     }
 }
 

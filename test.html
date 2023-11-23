@@ -27,18 +27,18 @@
                     <img src="https://academy.gsilab.id/img/logo.png" style="background-size: cover; width: 100%;" alt="alternative" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+							<span class="navbar-toggler-icon"></span>
+						</button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item mx-2">
                             <a class="nav-link page-scroll" href="/web/course">Courses <span
-                                class="sr-only">(current)</span></a>
+																class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link page-scroll" href="/web/training_workshop">Training
-                            &amp;
-                            Workshop</a>
+														&amp;
+														Workshop</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link page-scroll" href="/web/event">Event</a>
@@ -50,16 +50,16 @@
                             <a class="nav-link page-scroll" href="/web/about">About</a>
                         </li>
                         <!-- <li> <t t-call="website_sale.header_cart_link">
-                        <t t-set="_icon" t-value="True"/>
-                        <t t-set="_item_class" t-value="'nav-item mx-lg-3'"/>
-                        <t t-set="_link_class" t-value="'nav-link'"/>
-                    </t></li>
-                    <li><t t-call="portal.user_dropdown">
-                        <t t-set="_user_name" t-value="true"/>
-                        <t t-set="_item_class" t-value="'nav-item dropdown'"/>
-                        <t t-set="_link_class" t-value="'nav-link'"/>
-                        <t t-set="_dropdown_menu_class" t-value="'dropdown-menu-right'"/>
-                    </t></li> -->
+												<t t-set="_icon" t-value="True"/>
+												<t t-set="_item_class" t-value="'nav-item mx-lg-3'"/>
+												<t t-set="_link_class" t-value="'nav-link'"/>
+										</t></li>
+										<li><t t-call="portal.user_dropdown">
+												<t t-set="_user_name" t-value="true"/>
+												<t t-set="_item_class" t-value="'nav-item dropdown'"/>
+												<t t-set="_link_class" t-value="'nav-link'"/>
+												<t t-set="_dropdown_menu_class" t-value="'dropdown-menu-right'"/>
+										</t></li> -->
                     </ul>
 
 
@@ -68,12 +68,12 @@
                             <!-- <button class="btn btn-primary button-login ">Login</button> -->
                             <t t-if="uid in (4,None)">
                                 <a href="/web/login" class="btn btn-primary button-login " role="button" id="login">
-                            Login</a>
+														Login</a>
                             </t>
                             <!-- <t t-if="uid not in (4,None) ">
-                        <a href="/web/session/logout" role="menuitem" data-menu="logout" class="btn btn-primary button-login ">
-                            Logout</a>
-                    </t> -->
+												<a href="/web/session/logout" role="menuitem" data-menu="logout" class="btn btn-primary button-login ">
+														Logout</a>
+										</t> -->
                         </li>
                     </ul>
                 </div>
@@ -82,12 +82,12 @@
     </div>
 
     <!-- #########################################################
-        ### 1. Body
-        ######################################################### -->
+				### 1. Body
+				######################################################### -->
 
     <!-- ###################
-        ### 1. 1 Banner
-        ################### -->
+				### 1. 1 Banner
+				################### -->
     <div class="jumbotron-fluid banner_header_course">
         <div class="container">
             <div class="line_separate_79"></div>
@@ -113,8 +113,8 @@
 
     <!-- <div class="line_separated_banner_popular_prog"></div> -->
     <!-- ###################
-        ### 1. 1 How Does it work
-        ################### -->
+				### 1. 1 How Does it work
+				################### -->
     <!-- <div class="container-fluid"> -->
     <div class="container how_does_it_work">
         <div class="title_how_does_it_work">How Does
@@ -156,8 +156,8 @@
 
     </div>
     <!-- ###################
-        ### 1.2 Pupular course
-        ################### -->
+				### 1.2 Pupular course
+				################### -->
     <div class="container line_separated_100"></div>
     <div class="container popular_course">
         <div class="popular_course_tag">
@@ -186,128 +186,130 @@
         <div class="line_separe_title_course_60"></div>
 
         <div class="popular_course_item">
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <div class="card card_popular_course_item">
-                        <img src="img/kelas_yg_diminita1.png" class="card-img-top img-fluid" alt="...">
+            <div class="wrapper_card">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="card card_popular_course_item">
+                            <img src="img/kelas_yg_diminita1.png" class="card-img-top img-fluid" alt="...">
 
-                        <div class="card-body">
-                            <div class="line_separate_card_25"></div>
-                            <div class="card-title ">
-                                <div class="d-flex">
-                                    <p style="margin-right: auto;" class="course_title_popular_courese">Course Title</p>
-                                    <p style="margin-left: auto;" class="discount_percentage">IDR 100%</p>
+                            <div class="card-body">
+                                <div class="line_separate_card_25"></div>
+                                <div class="card-title ">
+                                    <div class="d-flex">
+                                        <p style="margin-right: auto;" class="course_title_popular_courese">Course Title</p>
+                                        <p style="margin-left: auto;" class="discount_percentage">IDR 100%</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="line_separate_card_25"></div>
-                            <p class="star_review text-left"><img src="img/star.png" alt=""><span> 4.5 / 5.0</span></p>
-                            <div class="line_separate_card_25"></div>
-                            <p class="layers text-left"><img src="img/Layers.png" alt=""><span class="layers_popular_course_text" id="layers_popular_course_text"> 12 Materi</span></p>
-                            <div class="line_separate_card_25"></div>
-                            <div class="text_course text-left text-truncate-container">
-                                This training will help you to know and understand what to do withThis training will help you to know and understand what to do withThis training will help you to know andand understand what to do withThis training will help you to know andand understand
-                                what to do withThis training will help you to know andand understand what to do withThis training will help you to know and
-                            </div>
+                                <div class="line_separate_card_25"></div>
+                                <p class="star_review text-left"><img src="img/star.png" alt=""><span> 4.5 / 5.0</span></p>
+                                <div class="line_separate_card_25"></div>
+                                <p class="layers text-left"><img src="img/Layers.png" alt=""><span class="layers_popular_course_text" id="layers_popular_course_text"> 12 Materi</span></p>
+                                <div class="line_separate_card_25"></div>
+                                <div class="text_course text-left text-truncate-container">
+                                    This training will help you to know and understand what to do withThis training will help you to know and understand what to do withThis training will help you to know andand understand what to do withThis training will help you to know andand understand
+                                    what to do withThis training will help you to know andand understand what to do withThis training will help you to know and
+                                </div>
 
-                            <div class="line_separate_card_25"></div>
-                            <div class="d-flex harga">
-                                <p style="margin-right: auto;" class="discount">IDR 300.000</p>
-                                <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
-                            </div>
-                            <div class="line_separate_50"></div>
-                            <!-- <div class="line_separate_height_10"></div> -->
-                            <a href="#" class="btn btn_our_course">Find out more</a>
+                                <div class="line_separate_card_25"></div>
+                                <div class="d-flex harga">
+                                    <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                                    <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                                </div>
+                                <div class="line_separate_50"></div>
+                                <!-- <div class="line_separate_height_10"></div> -->
+                                <a href="#" class="btn btn_our_course">Find out more</a>
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card_popular_course_item">
+                            <img src="img/kelas_yg_diminita2.png" class="card-img-top img-fluid" alt="...">
+
+                            <div class="card-body">
+                                <div class="line_separate_card_25"></div>
+                                <div class="card-title ">
+                                    <div class="d-flex">
+                                        <p style="margin-right: auto;" class="course_title_popular_courese">Course Title</p>
+                                        <p style="margin-left: auto;" class="discount_percentage">IDR 100%</p>
+                                    </div>
+                                </div>
+                                <div class="line_separate_card_25"></div>
+                                <p class="star_review text-left"><img src="img/star.png" alt=""><span> 4.5 / 5.0</span></p>
+                                <div class="line_separate_card_25"></div>
+                                <p class="layers text-left"><img src="img/Layers.png" alt=""><span class="layers_popular_course_text" id="layers_popular_course_text"> 12 Materi</span></p>
+                                <div class="line_separate_card_25"></div>
+                                <div class="text_course text-left text-truncate-container">
+                                    This training will help you to know and understand what to do withThis training will help you to know and understand what to do withThis training will help you to know andand understand what to do withThis training will help you to know andand understand
+                                    what to do withThis training will help you to know andand understand what to do withThis training will help you to know and
+                                </div>
+
+                                <div class="line_separate_card_25"></div>
+                                <div class="d-flex harga">
+                                    <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                                    <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                                </div>
+                                <div class="line_separate_50"></div>
+                                <!-- <div class="line_separate_height_10"></div> -->
+                                <a href="#" class="btn btn_our_course">Find out more</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card_popular_course_item">
+                            <img src="img/kelas_yg_diminita3.png" class="card-img-top img-fluid" alt="...">
+
+                            <div class="card-body">
+                                <div class="line_separate_card_25"></div>
+                                <div class="card-title ">
+                                    <div class="d-flex">
+                                        <p style="margin-right: auto;" class="course_title_popular_courese">Course Title</p>
+                                        <p style="margin-left: auto;" class="discount_percentage">IDR 100%</p>
+                                    </div>
+                                </div>
+                                <div class="line_separate_card_25"></div>
+                                <p class="star_review text-left"><img src="img/star.png" alt=""><span> 4.5 / 5.0</span></p>
+                                <div class="line_separate_card_25"></div>
+                                <p class="layers text-left"><img src="img/Layers.png" alt=""><span class="layers_popular_course_text" id="layers_popular_course_text"> 12 Materi</span></p>
+                                <div class="line_separate_card_25"></div>
+                                <div class="text_course text-left text-truncate-container">
+                                    This training will help you to know and understand what to do withThis training will help you to know and understand what to do withThis training will help you to know andand understand what to do withThis training will help you to know andand understand
+                                    what to do withThis training will help you to know andand understand what to do withThis training will help you to know and
+                                </div>
+
+                                <div class="line_separate_card_25"></div>
+                                <div class="d-flex harga">
+                                    <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                                    <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                                </div>
+                                <div class="line_separate_50"></div>
+                                <!-- <div class="line_separate_height_10"></div> -->
+                                <a href="#" class="btn btn_our_course">Find out more</a>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card card_popular_course_item">
-                        <img src="img/kelas_yg_diminita2.png" class="card-img-top img-fluid" alt="...">
-
-                        <div class="card-body">
-                            <div class="line_separate_card_25"></div>
-                            <div class="card-title ">
-                                <div class="d-flex">
-                                    <p style="margin-right: auto;" class="course_title_popular_courese">Course Title</p>
-                                    <p style="margin-left: auto;" class="discount_percentage">IDR 100%</p>
-                                </div>
-                            </div>
-                            <div class="line_separate_card_25"></div>
-                            <p class="star_review text-left"><img src="img/star.png" alt=""><span> 4.5 / 5.0</span></p>
-                            <div class="line_separate_card_25"></div>
-                            <p class="layers text-left"><img src="img/Layers.png" alt=""><span class="layers_popular_course_text" id="layers_popular_course_text"> 12 Materi</span></p>
-                            <div class="line_separate_card_25"></div>
-                            <div class="text_course text-left text-truncate-container">
-                                This training will help you to know and understand what to do withThis training will help you to know and understand what to do withThis training will help you to know andand understand what to do withThis training will help you to know andand understand
-                                what to do withThis training will help you to know andand understand what to do withThis training will help you to know and
-                            </div>
-
-                            <div class="line_separate_card_25"></div>
-                            <div class="d-flex harga">
-                                <p style="margin-right: auto;" class="discount">IDR 300.000</p>
-                                <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
-                            </div>
-                            <div class="line_separate_50"></div>
-                            <!-- <div class="line_separate_height_10"></div> -->
-                            <a href="#" class="btn btn_our_course">Find out more</a>
-
-                        </div>
+                <div class="line_separate_to_pagenation_32"></div>
+                <div class="row pagenation_popular_prog">
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="135" height="16" viewBox="0 0 135 16" fill="none">
+										<circle cx="67.5" cy="8" r="7.5" fill="#DDE0E4"/>
+										<circle cx="97.5" cy="8" r="7.5" fill="#DDE0E4"/>
+										<circle cx="127.5" cy="8" r="7.5" fill="#DDE0E4"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M7.55721 15.4998C7.53816 15.4999 7.51909 15.5 7.5 15.5C7.48091 15.5 7.46184 15.4999 7.44279 15.4998H6.9469V15.4799C3.06303 15.1968 0 11.9561 0 8C0 4.04389 3.06303 0.80319 6.9469 0.520085V0.5H7.5H37.0841V0.511337C37.2218 0.503812 37.3604 0.5 37.5 0.5C41.6421 0.5 45 3.85786 45 8C45 12.1421 41.6421 15.5 37.5 15.5C37.3604 15.5 37.2218 15.4962 37.0841 15.4887V15.4998H7.55721Z" fill="#0080BB"/>
+									</svg>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card card_popular_course_item">
-                        <img src="img/kelas_yg_diminita3.png" class="card-img-top img-fluid" alt="...">
-
-                        <div class="card-body">
-                            <div class="line_separate_card_25"></div>
-                            <div class="card-title ">
-                                <div class="d-flex">
-                                    <p style="margin-right: auto;" class="course_title_popular_courese">Course Title</p>
-                                    <p style="margin-left: auto;" class="discount_percentage">IDR 100%</p>
-                                </div>
-                            </div>
-                            <div class="line_separate_card_25"></div>
-                            <p class="star_review text-left"><img src="img/star.png" alt=""><span> 4.5 / 5.0</span></p>
-                            <div class="line_separate_card_25"></div>
-                            <p class="layers text-left"><img src="img/Layers.png" alt=""><span class="layers_popular_course_text" id="layers_popular_course_text"> 12 Materi</span></p>
-                            <div class="line_separate_card_25"></div>
-                            <div class="text_course text-left text-truncate-container">
-                                This training will help you to know and understand what to do withThis training will help you to know and understand what to do withThis training will help you to know andand understand what to do withThis training will help you to know andand understand
-                                what to do withThis training will help you to know andand understand what to do withThis training will help you to know and
-                            </div>
-
-                            <div class="line_separate_card_25"></div>
-                            <div class="d-flex harga">
-                                <p style="margin-right: auto;" class="discount">IDR 300.000</p>
-                                <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
-                            </div>
-                            <div class="line_separate_50"></div>
-                            <!-- <div class="line_separate_height_10"></div> -->
-                            <a href="#" class="btn btn_our_course">Find out more</a>
-
-                        </div>
+                    <div class="col prev_next text-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M23.75 13.7496H8.925L13.4625 8.29961C13.6747 8.04434 13.7768 7.71524 13.7463 7.38471C13.7158 7.05417 13.5553 6.74929 13.3 6.53711C13.0447 6.32494 12.7156 6.22286 12.3851 6.25334C12.0546 6.28381 11.7497 6.44434 11.5375 6.69961L5.2875 14.1996C5.24545 14.2593 5.20785 14.3219 5.175 14.3871C5.175 14.4496 5.175 14.4871 5.0875 14.5496C5.03084 14.6929 5.00118 14.8455 5 14.9996C5.00118 15.1537 5.03084 15.3063 5.0875 15.4496C5.0875 15.5121 5.0875 15.5496 5.175 15.6121C5.20785 15.6773 5.24545 15.74 5.2875 15.7996L11.5375 23.2996C11.655 23.4407 11.8022 23.5542 11.9686 23.632C12.1349 23.7097 12.3164 23.7499 12.5 23.7496C12.7921 23.7502 13.0751 23.6485 13.3 23.4621C13.4266 23.3572 13.5312 23.2283 13.6079 23.0829C13.6846 22.9374 13.7318 22.7783 13.7469 22.6146C13.762 22.4509 13.7447 22.2858 13.6959 22.1288C13.6471 21.9718 13.5678 21.8259 13.4625 21.6996L8.925 16.2496H23.75C24.0815 16.2496 24.3995 16.1179 24.6339 15.8835C24.8683 15.6491 25 15.3311 25 14.9996C25 14.6681 24.8683 14.3501 24.6339 14.1157C24.3995 13.8813 24.0815 13.7496 23.75 13.7496Z" fill="#0080BB"/>
+									</svg>
+                        <span class="item_separate_pagination"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M6.25 13.7496H21.075L16.5375 8.29961C16.3253 8.04434 16.2232 7.71524 16.2537 7.38471C16.2842 7.05417 16.4447 6.74929 16.7 6.53711C16.9553 6.32494 17.2844 6.22286 17.6149 6.25334C17.9454 6.28381 18.2503 6.44434 18.4625 6.69961L24.7125 14.1996C24.7545 14.2593 24.7922 14.3219 24.825 14.3871C24.825 14.4496 24.825 14.4871 24.9125 14.5496C24.9692 14.6929 24.9988 14.8455 25 14.9996C24.9988 15.1537 24.9692 15.3063 24.9125 15.4496C24.9125 15.5121 24.9125 15.5496 24.825 15.6121C24.7922 15.6773 24.7545 15.74 24.7125 15.7996L18.4625 23.2996C18.345 23.4407 18.1978 23.5542 18.0314 23.632C17.8651 23.7097 17.6836 23.7499 17.5 23.7496C17.2079 23.7502 16.9249 23.6485 16.7 23.4621C16.5734 23.3572 16.4688 23.2283 16.3921 23.0829C16.3154 22.9374 16.2682 22.7783 16.2531 22.6146C16.238 22.4509 16.2553 22.2858 16.3041 22.1288C16.3529 21.9718 16.4322 21.8259 16.5375 21.6996L21.075 16.2496H6.25C5.91848 16.2496 5.60054 16.1179 5.36612 15.8835C5.1317 15.6491 5 15.3311 5 14.9996C5 14.6681 5.1317 14.3501 5.36612 14.1157C5.60054 13.8813 5.91848 13.7496 6.25 13.7496Z" fill="#0080BB"/>
+									</svg>
                     </div>
-                </div>
-            </div>
-            <div class="line_separate_to_pagenation_32"></div>
-            <div class="row pagenation_popular_prog">
-                <div class="col">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="135" height="16" viewBox="0 0 135 16" fill="none">
-                    <circle cx="67.5" cy="8" r="7.5" fill="#DDE0E4"/>
-                    <circle cx="97.5" cy="8" r="7.5" fill="#DDE0E4"/>
-                    <circle cx="127.5" cy="8" r="7.5" fill="#DDE0E4"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.55721 15.4998C7.53816 15.4999 7.51909 15.5 7.5 15.5C7.48091 15.5 7.46184 15.4999 7.44279 15.4998H6.9469V15.4799C3.06303 15.1968 0 11.9561 0 8C0 4.04389 3.06303 0.80319 6.9469 0.520085V0.5H7.5H37.0841V0.511337C37.2218 0.503812 37.3604 0.5 37.5 0.5C41.6421 0.5 45 3.85786 45 8C45 12.1421 41.6421 15.5 37.5 15.5C37.3604 15.5 37.2218 15.4962 37.0841 15.4887V15.4998H7.55721Z" fill="#0080BB"/>
-                  </svg>
-                </div>
-                <div class="col prev_next text-right">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                    <path d="M23.75 13.7496H8.925L13.4625 8.29961C13.6747 8.04434 13.7768 7.71524 13.7463 7.38471C13.7158 7.05417 13.5553 6.74929 13.3 6.53711C13.0447 6.32494 12.7156 6.22286 12.3851 6.25334C12.0546 6.28381 11.7497 6.44434 11.5375 6.69961L5.2875 14.1996C5.24545 14.2593 5.20785 14.3219 5.175 14.3871C5.175 14.4496 5.175 14.4871 5.0875 14.5496C5.03084 14.6929 5.00118 14.8455 5 14.9996C5.00118 15.1537 5.03084 15.3063 5.0875 15.4496C5.0875 15.5121 5.0875 15.5496 5.175 15.6121C5.20785 15.6773 5.24545 15.74 5.2875 15.7996L11.5375 23.2996C11.655 23.4407 11.8022 23.5542 11.9686 23.632C12.1349 23.7097 12.3164 23.7499 12.5 23.7496C12.7921 23.7502 13.0751 23.6485 13.3 23.4621C13.4266 23.3572 13.5312 23.2283 13.6079 23.0829C13.6846 22.9374 13.7318 22.7783 13.7469 22.6146C13.762 22.4509 13.7447 22.2858 13.6959 22.1288C13.6471 21.9718 13.5678 21.8259 13.4625 21.6996L8.925 16.2496H23.75C24.0815 16.2496 24.3995 16.1179 24.6339 15.8835C24.8683 15.6491 25 15.3311 25 14.9996C25 14.6681 24.8683 14.3501 24.6339 14.1157C24.3995 13.8813 24.0815 13.7496 23.75 13.7496Z" fill="#0080BB"/>
-                  </svg>
-                    <span class="item_separate_pagination"></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                    <path d="M6.25 13.7496H21.075L16.5375 8.29961C16.3253 8.04434 16.2232 7.71524 16.2537 7.38471C16.2842 7.05417 16.4447 6.74929 16.7 6.53711C16.9553 6.32494 17.2844 6.22286 17.6149 6.25334C17.9454 6.28381 18.2503 6.44434 18.4625 6.69961L24.7125 14.1996C24.7545 14.2593 24.7922 14.3219 24.825 14.3871C24.825 14.4496 24.825 14.4871 24.9125 14.5496C24.9692 14.6929 24.9988 14.8455 25 14.9996C24.9988 15.1537 24.9692 15.3063 24.9125 15.4496C24.9125 15.5121 24.9125 15.5496 24.825 15.6121C24.7922 15.6773 24.7545 15.74 24.7125 15.7996L18.4625 23.2996C18.345 23.4407 18.1978 23.5542 18.0314 23.632C17.8651 23.7097 17.6836 23.7499 17.5 23.7496C17.2079 23.7502 16.9249 23.6485 16.7 23.4621C16.5734 23.3572 16.4688 23.2283 16.3921 23.0829C16.3154 22.9374 16.2682 22.7783 16.2531 22.6146C16.238 22.4509 16.2553 22.2858 16.3041 22.1288C16.3529 21.9718 16.4322 21.8259 16.5375 21.6996L21.075 16.2496H6.25C5.91848 16.2496 5.60054 16.1179 5.36612 15.8835C5.1317 15.6491 5 15.3311 5 14.9996C5 14.6681 5.1317 14.3501 5.36612 14.1157C5.60054 13.8813 5.91848 13.7496 6.25 13.7496Z" fill="#0080BB"/>
-                  </svg>
                 </div>
             </div>
         </div>
@@ -316,50 +318,11 @@
     <div class="line_separated_100"></div>
 
 
-    <!-- ###################
-        ### 1.3 dibimbing mentor berpengalaman
-        ################### -->
-    <div class="container ">
-        <div class="container line_separated_100"></div>
-        <div class="row image_be_part_of_us">
-            <div class="col-md-4 d-none d-md-block" id="image_first_col">
-                <img src="img/be_part_of_1.png" alt="" id="image_first">
-                <div class="line_separe_title_course_20"></div>
-                <p class="text-center title_image_mentor">Name Mentor</p>
-                <div class="line_separate_height_10"></div>
-                <p class="job_mentor text-center">job mentor</p>
-            </div>
-            <div class="col-md-4 text-center" id="image_center_col">
-                <img src="img/be_part_of_2.png" alt="" id="image_center" class="image_center">
-                <div class="line_separe_title_course_20"></div>
-                <p class="text-center title_image_mentor">Name Mentor</p>
-                <div class="line_separate_height_10"></div>
-                <p class="job_mentor">job mentor</p>
-            </div>
-            <div class="col-md-4 text-right d-none d-md-block" id="image_last_col">
-                <img src="img/be_part_of_3.png" alt="" id="image_last" class="image_last">
-                <div class="line_separe_title_course_20"></div>
-                <p class="text-center title_image_mentor">Name Mentor</p>
-                <div class="line_separate_height_10"></div>
-                <p class="text-center job_mentor">job mentor</p>
-            </div>
-        </div>
-    </div>
-    <div class="dibimbing_mentor_berpengalaman_text text-center">
-        <div class="container line_separated_420_cp"></div>
-        <p class="dibimbing_mentor_berpengalaman">Dibimbing <span>Mentor Berpengalaman </span></p>
-
-        <p class="to_part_of_us_context_sub m-auto">Join us as facilitators and trainers or partners in contributing and sharing knowledge for the society</p>
-    </div>
-
-
-    <div class="line_separated_100"></div>
-
 
 
     <!-- ###################
-        ### 1.3 Our courses
-        ################### -->
+				### 1.3 Our courses
+				################### -->
     <div class="container-fluid wrapper_our_course">
         <div class="container our_course">
             <div class="title_our_courses">Our
@@ -448,8 +411,8 @@
     <div class="line_separated_100"></div>
 
     <!-- ###################
-        ### 1.3 Our Join our training & workshop
-        ################### -->
+				### 1.3 Our Join our training & workshop
+				################### -->
     <div class="container training_workshop">
         <div class="line_separate_50"></div>
         <div class="row">
@@ -472,8 +435,8 @@
     <div class="line_separated_100"></div>
 
     <!-- ###################
-        ### 1.3 Our Join our training & workshop course item
-        ################### -->
+				### 1.3 Our Join our training & workshop course item
+				################### -->
     <div class="container training_workshop_item">
         <div class="line_separate_hight_60"></div>
         <div class="title_training_and_workshop_item">Our
@@ -576,8 +539,8 @@
     <div class="line_separated_100"></div>
 
     <!-- ###################
-        ### 1.4 Our events
-        ################### -->
+				### 1.4 Our events
+				################### -->
 
     <div class="container our_events">
         <div class="row">
@@ -601,8 +564,8 @@
 
     <div class="line_separated_100"></div>
     <!-- ###################
-        ### 1.4.1 Our events items
-        ################### -->
+				### 1.4.1 Our events items
+				################### -->
     <div class="container our_events_item">
         <div class="title_our_vents_item mx-auto">Our <span>Events</span></div>
         <div class="separate_line_66"></div>
@@ -692,8 +655,8 @@
 
     <div class="line_separated_100"></div>
     <!-- ###################
-        ### 1.5 Testimony
-        ################### -->
+				### 1.5 Testimony
+				################### -->
     <div class="container testimony">
         <div class="line_separate_61"></div>
         <div class="testimony_content">
@@ -758,20 +721,20 @@
         <div class="row pagenation_popular_prog">
             <div class="col">
                 <svg xmlns="http://www.w3.org/2000/svg" width="135" height="16" viewBox="0 0 135 16" fill="none">
-                    <circle cx="67.5" cy="8" r="7.5" fill="#DDE0E4"/>
-                    <circle cx="97.5" cy="8" r="7.5" fill="#DDE0E4"/>
-                    <circle cx="127.5" cy="8" r="7.5" fill="#DDE0E4"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.55721 15.4998C7.53816 15.4999 7.51909 15.5 7.5 15.5C7.48091 15.5 7.46184 15.4999 7.44279 15.4998H6.9469V15.4799C3.06303 15.1968 0 11.9561 0 8C0 4.04389 3.06303 0.80319 6.9469 0.520085V0.5H7.5H37.0841V0.511337C37.2218 0.503812 37.3604 0.5 37.5 0.5C41.6421 0.5 45 3.85786 45 8C45 12.1421 41.6421 15.5 37.5 15.5C37.3604 15.5 37.2218 15.4962 37.0841 15.4887V15.4998H7.55721Z" fill="#0080BB"/>
-                  </svg>
+										<circle cx="67.5" cy="8" r="7.5" fill="#DDE0E4"/>
+										<circle cx="97.5" cy="8" r="7.5" fill="#DDE0E4"/>
+										<circle cx="127.5" cy="8" r="7.5" fill="#DDE0E4"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M7.55721 15.4998C7.53816 15.4999 7.51909 15.5 7.5 15.5C7.48091 15.5 7.46184 15.4999 7.44279 15.4998H6.9469V15.4799C3.06303 15.1968 0 11.9561 0 8C0 4.04389 3.06303 0.80319 6.9469 0.520085V0.5H7.5H37.0841V0.511337C37.2218 0.503812 37.3604 0.5 37.5 0.5C41.6421 0.5 45 3.85786 45 8C45 12.1421 41.6421 15.5 37.5 15.5C37.3604 15.5 37.2218 15.4962 37.0841 15.4887V15.4998H7.55721Z" fill="#0080BB"/>
+									</svg>
             </div>
             <div class="col prev_next text-right">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                    <path d="M23.75 13.7496H8.925L13.4625 8.29961C13.6747 8.04434 13.7768 7.71524 13.7463 7.38471C13.7158 7.05417 13.5553 6.74929 13.3 6.53711C13.0447 6.32494 12.7156 6.22286 12.3851 6.25334C12.0546 6.28381 11.7497 6.44434 11.5375 6.69961L5.2875 14.1996C5.24545 14.2593 5.20785 14.3219 5.175 14.3871C5.175 14.4496 5.175 14.4871 5.0875 14.5496C5.03084 14.6929 5.00118 14.8455 5 14.9996C5.00118 15.1537 5.03084 15.3063 5.0875 15.4496C5.0875 15.5121 5.0875 15.5496 5.175 15.6121C5.20785 15.6773 5.24545 15.74 5.2875 15.7996L11.5375 23.2996C11.655 23.4407 11.8022 23.5542 11.9686 23.632C12.1349 23.7097 12.3164 23.7499 12.5 23.7496C12.7921 23.7502 13.0751 23.6485 13.3 23.4621C13.4266 23.3572 13.5312 23.2283 13.6079 23.0829C13.6846 22.9374 13.7318 22.7783 13.7469 22.6146C13.762 22.4509 13.7447 22.2858 13.6959 22.1288C13.6471 21.9718 13.5678 21.8259 13.4625 21.6996L8.925 16.2496H23.75C24.0815 16.2496 24.3995 16.1179 24.6339 15.8835C24.8683 15.6491 25 15.3311 25 14.9996C25 14.6681 24.8683 14.3501 24.6339 14.1157C24.3995 13.8813 24.0815 13.7496 23.75 13.7496Z" fill="#0080BB"/>
-                  </svg>
+										<path d="M23.75 13.7496H8.925L13.4625 8.29961C13.6747 8.04434 13.7768 7.71524 13.7463 7.38471C13.7158 7.05417 13.5553 6.74929 13.3 6.53711C13.0447 6.32494 12.7156 6.22286 12.3851 6.25334C12.0546 6.28381 11.7497 6.44434 11.5375 6.69961L5.2875 14.1996C5.24545 14.2593 5.20785 14.3219 5.175 14.3871C5.175 14.4496 5.175 14.4871 5.0875 14.5496C5.03084 14.6929 5.00118 14.8455 5 14.9996C5.00118 15.1537 5.03084 15.3063 5.0875 15.4496C5.0875 15.5121 5.0875 15.5496 5.175 15.6121C5.20785 15.6773 5.24545 15.74 5.2875 15.7996L11.5375 23.2996C11.655 23.4407 11.8022 23.5542 11.9686 23.632C12.1349 23.7097 12.3164 23.7499 12.5 23.7496C12.7921 23.7502 13.0751 23.6485 13.3 23.4621C13.4266 23.3572 13.5312 23.2283 13.6079 23.0829C13.6846 22.9374 13.7318 22.7783 13.7469 22.6146C13.762 22.4509 13.7447 22.2858 13.6959 22.1288C13.6471 21.9718 13.5678 21.8259 13.4625 21.6996L8.925 16.2496H23.75C24.0815 16.2496 24.3995 16.1179 24.6339 15.8835C24.8683 15.6491 25 15.3311 25 14.9996C25 14.6681 24.8683 14.3501 24.6339 14.1157C24.3995 13.8813 24.0815 13.7496 23.75 13.7496Z" fill="#0080BB"/>
+									</svg>
                 <span class="item_separate_pagination"></span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                    <path d="M6.25 13.7496H21.075L16.5375 8.29961C16.3253 8.04434 16.2232 7.71524 16.2537 7.38471C16.2842 7.05417 16.4447 6.74929 16.7 6.53711C16.9553 6.32494 17.2844 6.22286 17.6149 6.25334C17.9454 6.28381 18.2503 6.44434 18.4625 6.69961L24.7125 14.1996C24.7545 14.2593 24.7922 14.3219 24.825 14.3871C24.825 14.4496 24.825 14.4871 24.9125 14.5496C24.9692 14.6929 24.9988 14.8455 25 14.9996C24.9988 15.1537 24.9692 15.3063 24.9125 15.4496C24.9125 15.5121 24.9125 15.5496 24.825 15.6121C24.7922 15.6773 24.7545 15.74 24.7125 15.7996L18.4625 23.2996C18.345 23.4407 18.1978 23.5542 18.0314 23.632C17.8651 23.7097 17.6836 23.7499 17.5 23.7496C17.2079 23.7502 16.9249 23.6485 16.7 23.4621C16.5734 23.3572 16.4688 23.2283 16.3921 23.0829C16.3154 22.9374 16.2682 22.7783 16.2531 22.6146C16.238 22.4509 16.2553 22.2858 16.3041 22.1288C16.3529 21.9718 16.4322 21.8259 16.5375 21.6996L21.075 16.2496H6.25C5.91848 16.2496 5.60054 16.1179 5.36612 15.8835C5.1317 15.6491 5 15.3311 5 14.9996C5 14.6681 5.1317 14.3501 5.36612 14.1157C5.60054 13.8813 5.91848 13.7496 6.25 13.7496Z" fill="#0080BB"/>
-                  </svg>
+										<path d="M6.25 13.7496H21.075L16.5375 8.29961C16.3253 8.04434 16.2232 7.71524 16.2537 7.38471C16.2842 7.05417 16.4447 6.74929 16.7 6.53711C16.9553 6.32494 17.2844 6.22286 17.6149 6.25334C17.9454 6.28381 18.2503 6.44434 18.4625 6.69961L24.7125 14.1996C24.7545 14.2593 24.7922 14.3219 24.825 14.3871C24.825 14.4496 24.825 14.4871 24.9125 14.5496C24.9692 14.6929 24.9988 14.8455 25 14.9996C24.9988 15.1537 24.9692 15.3063 24.9125 15.4496C24.9125 15.5121 24.9125 15.5496 24.825 15.6121C24.7922 15.6773 24.7545 15.74 24.7125 15.7996L18.4625 23.2996C18.345 23.4407 18.1978 23.5542 18.0314 23.632C17.8651 23.7097 17.6836 23.7499 17.5 23.7496C17.2079 23.7502 16.9249 23.6485 16.7 23.4621C16.5734 23.3572 16.4688 23.2283 16.3921 23.0829C16.3154 22.9374 16.2682 22.7783 16.2531 22.6146C16.238 22.4509 16.2553 22.2858 16.3041 22.1288C16.3529 21.9718 16.4322 21.8259 16.5375 21.6996L21.075 16.2496H6.25C5.91848 16.2496 5.60054 16.1179 5.36612 15.8835C5.1317 15.6491 5 15.3311 5 14.9996C5 14.6681 5.1317 14.3501 5.36612 14.1157C5.60054 13.8813 5.91848 13.7496 6.25 13.7496Z" fill="#0080BB"/>
+									</svg>
             </div>
         </div>
 
@@ -887,18 +850,18 @@
                             <li class="list-group-item heading_title_footer" id="title_menu_footer">
                                 Menu</li>
                             <li class="list-group-item"><a href="#">
-                                Course and Workshop</a></li>
+																Course and Workshop</a></li>
                             <li class="list-group-item"><a href="#">
-                                Research</a></li>
+																Research</a></li>
                             <li class="list-group-item"><a href="#">
-                                Blog</a></li>
+																Blog</a></li>
                             <li class="list-group-item"><a href="#">
-                                Event</a></li>
+																Event</a></li>
                             <li class="list-group-item"><a href="#">
-                                About</a></li>
+																About</a></li>
                             <li class="list-group-item"><a href="#">Privacy Policy</a></li>
                             <li class="list-group-item"><a href="#">Terms
-                                &amp; Conditions</a></li>
+																&amp; Conditions</a></li>
                         </ul>
                     </div>
                 </div>
@@ -942,26 +905,26 @@
                                 Follow for More</li>
                         </ul>
                         <span class="fa-stack " style="font-size: 1.0rem; ">
-                                <a href="https://www.instagram.com/gsilab.id/">
-                                    <img src="https://academy.gsilab.id/img/ig.png " style="width: 24px; " />
+																<a href="https://www.instagram.com/gsilab.id/">
+																		<img src="https://academy.gsilab.id/img/ig.png " style="width: 24px; " />
 
-                                </a>
-                            </span>
+																</a>
+														</span>
                         <span class="fa-stack " style="font-size: 1.0rem; ">
-                                <a href="https://www.facebook.com/GSILAB.ID/">
-                                    <img src="https://academy.gsilab.id/img/fb.png " style="width: 24px; " />
-                                </a>
-                            </span>
+																<a href="https://www.facebook.com/GSILAB.ID/">
+																		<img src="https://academy.gsilab.id/img/fb.png " style="width: 24px; " />
+																</a>
+														</span>
                         <span class="fa-stack " style="font-size: 1.0rem; ">
-                                <a href="#your-link ">
-                                    <img src="https://academy.gsilab.id/img/spotify.png " style="width: 24px; " />
-                                </a>
-                            </span>
+																<a href="#your-link ">
+																		<img src="https://academy.gsilab.id/img/spotify.png " style="width: 24px; " />
+																</a>
+														</span>
                         <span class="fa-stack " style="font-size: 1.0rem; ">
-                                <a href="https://id.linkedin.com/company/gsi-lab">
-                                    <img src="https://academy.gsilab.id/img/linkdin.png " style="width: 24px; " />
-                                </a>
-                            </span>
+																<a href="https://id.linkedin.com/company/gsi-lab">
+																		<img src="https://academy.gsilab.id/img/linkdin.png " style="width: 24px; " />
+																</a>
+														</span>
                     </div>
                 </div>
 
@@ -985,10 +948,10 @@
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js " integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+ " crossorigin="anonymous "></script>
-    -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js " integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+ " crossorigin="anonymous "></script>
+		-->
 </body>
 
 </html>

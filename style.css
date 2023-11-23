@@ -1452,6 +1452,10 @@ card>img {
     min-height: 420px;
 }
 
+.line_separated_420_cp {
+    min-height: 230px;
+}
+
 .to_part_of_us_context {
     color: var(--gsi-academy-black-b-3, #333);
     text-align: center;
@@ -1825,4 +1829,67 @@ card>img {
 .card_popular_course_item .card-img-top {
     border-top-left-radius: 10px;
     border-top-left-radius: 10px;
+}
+
+#image_first_col .title_image_mentor {
+    margin-left: -70px;
+}
+
+#image_last_col .title_image_mentor {
+    margin-left: 50px;
+}
+
+#image_first_col .job_mentor {
+    margin-left: -70px;
+}
+
+#image_last_col .job_mentor {
+    margin-left: 50px;
+}
+
+.title_image_mentor {
+    align-self: stretch;
+    color: var(--text-color, #252B42);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 120% */
+    letter-spacing: 0.1px;
+    margin-bottom: 0px;
+}
+
+.dibimbing_mentor_berpengalaman {
+    color: var(--gsi-academy-black-b-3, #333);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 66px */
+    letter-spacing: -0.88px;
+}
+
+.dibimbing_mentor_berpengalaman span {
+    color: var(--gsi-academy-blue-yellow-y-1, #F39501);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.88px;
+}
+
+.dibimbing_mentor_berpengalaman_text {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('img/dibimbing.png') center center no-repeat;
+    min-height: 546px;
+    /* width: 1440px; */
+    background-size: auto;
+    margin-top: -220px;
+}
+
+.line_separate_51 {
+    min-height: 51px;
 }
