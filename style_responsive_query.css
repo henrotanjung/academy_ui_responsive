@@ -568,6 +568,11 @@ max-width: 1440px;
     .line_separated_420_cp {
         min-height: 420px;
     }
+    .card_our_course {
+        height: 680px;
+        min-height: 680px;
+        border-radius: 10px;
+    }
 }
 
 @media (min-width: 1200px) {
