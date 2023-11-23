@@ -1890,6 +1890,62 @@ card>img {
     margin-top: -220px;
 }
 
+.title_kelas_kami p {
+    color: var(--gsi-academy-blue-b-5, #0080BB);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 66px */
+    letter-spacing: -0.88px;
+}
+
+.title_kelas_kami p span {
+    color: var(--gsi-academy-black-b-3, #333);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.88px;
+}
+
+#searc_icon_cp img {
+    width: 32px;
+    height: 32px;
+}
+
+.has-search #searc_icon_cp {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 1110px;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: right;
+    pointer-events: none;
+    color: lightgrey;
+    float: left;
+    /* border: 1px solid; */
+}
+
+#form_cp {
+    /* width: 1110px; */
+}
+
+#form_cp {
+    width: 200px;
+}
+
+.has_search_cp {
+    margin-bottom: 0px;
+}
+
+.kelas_kami .our_course {
+    padding: 0px;
+}
+
 .line_separate_51 {
     min-height: 51px;
 }
