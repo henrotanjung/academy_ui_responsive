@@ -573,6 +573,130 @@ max-width: 1440px;
         min-height: 680px;
         border-radius: 10px;
     }
+    .card_our_course_cp {
+        /* height: 680px; */
+        min-height: 740px;
+    }
+    .our_course_cp {
+        min-height: auto;
+        max-height: auto;
+        /* border: 1px solid; */
+    }
+    .faq {
+        height: 600px;
+        /* border: 1px solid; */
+    }
+    .title_faq_right {
+        /* typography */
+        color: var(--gsi-academy-blue-yellow-y-1, #F39501);
+        text-align: right;
+        font-family: Poppins;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        /* 66px */
+        letter-spacing: -0.88px;
+    }
+    .title_faq_right span {
+        color: var(--gsi-academy-black-b-3, #333);
+        font-family: Poppins;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.88px;
+    }
+    #btn_faq {
+        padding-left: 0px!important;
+    }
+    .title_of_faq_text {
+        /* display: flex; */
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+        gap: 20px;
+        border-radius: 20px;
+        background: #F8FBFE;
+    }
+    .title_of_faq_second {
+        /* display: flex; */
+        padding-right: 0px;
+    }
+    .title_of_faq {
+        color: var(--gsi-academy-black-b-3, #333);
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.2px;
+    }
+    .text_title_faq_final {
+        padding-left: 20px;
+    }
+    #collapseOne .card-body {
+        display: flex;
+        /* width: 593px; */
+        height: 205px;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        border-radius: 20px;
+        background: var(--gsi-academy-blue-b-5, #0080BB);
+        /* typography */
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.2px;
+    }
+    #collapseTwo .card-body {
+        display: flex;
+        width: 593px;
+        height: 205px;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        border-radius: 20px;
+        background: var(--gsi-academy-blue-b-5, #0080BB);
+        /* typography */
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.2px;
+    }
+    #collapseThree .card-body {
+        display: flex;
+        width: 593px;
+        height: 205px;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        border-radius: 20px;
+        background: var(--gsi-academy-blue-b-5, #0080BB);
+        /* typography */
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.2px;
+    }
 }
 
 @media (min-width: 1200px) {
