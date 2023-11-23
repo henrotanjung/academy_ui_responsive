@@ -1946,6 +1946,10 @@ card>img {
     padding: 0px;
 }
 
+.card_header_faq .card-header {
+    background-color: transparent;
+}
+
 .line_separate_51 {
     min-height: 51px;
 }
