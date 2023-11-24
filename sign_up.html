@@ -101,15 +101,38 @@
                         <div class="card-body">
                             <form>
                                 <div class="form-group">
+                                    <label for="title">Title</label>
+                                    <select class="form-control form-control-lg form-select" name="title_field" id="title_field" aria-label="Default select example">
+                                        <option value="3">Mr.</option>
+                                        <option value="7">Mrs.</option>
+                                        <option value="6">Ms</option>
+                                    </select>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Nama Lengkap</label>
+                                    <input type="text" name="name" t-att-value="name" id="name" class="form-control form-control-lg" required="required" t-att-readonly="'readonly' if only_passwords else None" t-att-autofocus="'autofocus' if login and not only_passwords else None" placeholder="Nama lengkap"
+                                    />
+                                    <div class="alert alert-warning" id="alert_nama" style="display: none; text-align: center">
+                                        Nama is required
+                                    </div>
+                                    <small id="emailHelp" class="form-text text-muted">* Nama lengkap beserta gelar (mohon pastikan tidak ada kesalahan penulisan karena nama akan dicantumkan pada sertifikat)</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="instansi">Instansi</label>
+                                    <input type="text" name="instansi" t-att-value="instansi" id="instansi" class="form-control" placeholder="Instansi" />
+                                </div>
+                                <div class="form-group">
                                     <label for="email">Email</label>
                                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Masukkan Email">
-                                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Password</label>
-                                    <span class="form-control-feedback " id="see_password"> <img src="img/see.png"></span>
+
                                     <input type="password" class="form-control" id="password" placeholder="Maukkan Kata Sandi">
-                                    <small id="forgot_password" class="form-text text-muted text-right"><a href="#">Forgot Password</a></small>
+
+                                    <!-- <small id="forgot_password" class="form-text text-muted text-right"><a href="#">Forgot Password</a></small> -->
                                 </div>
                                 <div class="line_separe_title_course_60"></div>
                                 <div class="row text-center">

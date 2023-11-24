@@ -2022,21 +2022,50 @@ card>img {
     align-self: stretch;
     /* Style */
     border-radius: 10px;
-    background: var(--gsi-neutral-n-3, #F5F6F8);
+    background-color: var(--gsi-neutral-n-3, #F5F6F8);
 }
 
-#see_password {
-    position: absolute;
+#login_form form select {
+    display: flex;
+    height: 60px;
+    padding: 10px 24px;
+    align-items: center;
+    align-self: stretch;
+    /* Style */
+    border-radius: 10px;
+    background: var(--gsi-neutral-n-3, #F5F6F8);
+    /* you should keep these first rules in place to maintain cross-browser behavior */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-image: url('https://academy.gsilab.id/img/down-arrow.png');
+    background-position: 96% 50%;
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+#password {
     z-index: 2;
-    display: block;
-    width: 1050px;
-    height: 3.375rem;
-    line-height: 3.7rem;
-    text-align: center;
-    pointer-events: none;
-    color: lightgrey;
-    float: left;
-    /* border: 1px solid; */
+    display: flex;
+    height: 60px;
+    padding: 10px 24px;
+    align-items: center;
+    align-self: stretch;
+    /* Style */
+    border-radius: 10px;
+    background: var(--gsi-neutral-n-3, #F5F6F8);
+    /* you should keep these first rules in place to maintain cross-browser behavior */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-image: url('img/see.png');
+    background-position: 96% 50%;
+    background-repeat: no-repeat;
+    outline: none;
 }
 
 #forgot_password {
@@ -2069,4 +2098,16 @@ card>img {
 
 .line_separe_200 {
     min-height: 200px;
+}
+
+#login_navbar {
+    display: flex;
+    padding: 15px 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--gsi-academy-blue-b-5, #0080BB);
+    /* GSI-Effect1 */
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
 }
