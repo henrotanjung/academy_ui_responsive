@@ -697,6 +697,18 @@ max-width: 1440px;
         line-height: normal;
         letter-spacing: 0.2px;
     }
+    /* #################
+    ### Login
+    #################### */
+    #login_form .card {
+        padding: 60px 40px;
+        gap: 60px;
+        /* layout */
+        border-radius: 30px;
+        background: #FFF;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+        width: 680px;
+    }
 }
 
 @media (min-width: 1200px) {
