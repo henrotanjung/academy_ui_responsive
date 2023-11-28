@@ -710,6 +710,10 @@ card>img {
     min-height: 60px;
 }
 
+.line_separe_title_course_40 {
+    min-height: 40px;
+}
+
 .line_separate_hight_60 {
     min-height: 60px;
     /* border: 1px solid; */
@@ -2170,12 +2174,17 @@ card>img {
 }
 
 .header_nav {
-    display: flex;
+    /* display: flex; */
     /* width: 701px; */
     justify-content: space-between;
     align-items: center;
-    border-radius: 100px;
+    /* border-radius: 100px; */
     background: #F8FBFE;
+    padding-top: 10px;
+}
+
+.header_nav ul li {
+    padding: 0px;
 }
 
 .nav-pills .nav-link.active,
@@ -2184,20 +2193,21 @@ card>img {
     padding: 12px 20px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     /* style */
     border-radius: 100px;
     background: #0080BB;
 }
 
-.user_profile .col-8 {
+.user_profile .col-md-8 {
     padding: 0px;
 }
 
 .title_item_user_p {
+    margin-top: 5px;
     color: var(--gsi-academy-black-b-3, #333);
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
@@ -2206,8 +2216,9 @@ card>img {
 }
 
 .type_item_user_p {
+    margin-top: 5px;
     display: flex;
-    padding: 4px 20px;
+    padding: 2px 10px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -2217,7 +2228,7 @@ card>img {
     /* typography */
     color: #FFF;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
@@ -2225,13 +2236,154 @@ card>img {
     letter-spacing: 0.2px;
 }
 
-#pills-tabContent .row {
-    margin-right: 0px;
-    padding: 20px;
+#pills-tabContent {
+    margin: 0px!important;
 }
 
-#pills-tabContent .row .col-9 {
-    padding: 10px 0px;
+#pills-tabContent .row {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#pills-tabContent .row .col-md-9 {}
+
+.tab-pane .col-md-3 {
+    padding: 0px;
+}
+
+.tab-pane .col-md-9 {
+    padding: 0px;
+}
+
+.tab-pane .row .col-md-3 img {
+    /* width: 130px; */
+}
+
+#detail_user_p {
+    margin-top: -150px;
+}
+
+.left_side_user_p {
+    width: 100%;
+    /* border: 1px solid; */
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    /* margin-left: auto; */
+    text-align: center;
+}
+
+.left_side_user_p li {
+    text-align: -webkit-center;
+}
+
+.left_side_user_p .header_nav ul {}
+
+.right_side_user_p {
+    width: 100%;
+    /* border: 1px solid; */
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.left_side_user_p img {
+    /* width: 130px; */
+}
+
+.right_side_user_p {
+    padding: 20px 25px 0px 25px;
+}
+
+.right_side_user_p img {
+    width: 193px;
+    /* height: 193px; */
+}
+
+#user_name {
+    color: var(--gsi-academy-black-b-3, #333);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    margin-bottom: 0px;
+}
+
+#user_email {
+    color: var(--gsi-academy-black-b-7, #999);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    margin-bottom: 0px;
+}
+
+.ubah_profile {
+    /* Layout */
+    display: flex;
+    padding: 10px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    align-self: stretch;
+    /* style */
+    border-radius: 10px;
+    background: var(--gsi-academy-blue-b-5, #0080BB);
+    /* typography */
+    color: #FFF;
+    text-align: center;
+    /* Button */
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.logout_user_p {
+    /* Layout */
+    display: flex;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    /* style */
+    border-radius: 10px;
+    border: 2px solid #0080BB;
+    /* typography */
+    color: #0080BB;
+    text-align: center;
+    /* Button */
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.detail_course_user_p {
+    /* Layout */
+    align-self: stretch;
+    /* Typography */
+    color: var(--gsi-academy-black-b-6, #7F7F7F);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+    letter-spacing: 0.2px;
 }
 
 

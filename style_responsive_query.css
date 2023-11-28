@@ -746,6 +746,68 @@ max-width: 1440px;
         background: #FFF;
         box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25);
     }
+    /* ################
+    ### User profile
+    ################### */
+    .header_nav {
+        /* display: flex; */
+        /* width: 701px; */
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 100px;
+        background: #F8FBFE;
+    }
+    .left_side_user_p {
+        width: 73%;
+        /* border: 1px solid; */
+        padding: 40px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        display: flex;
+        padding: 12px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        /* style */
+        border-radius: 100px;
+        background: #0080BB;
+    }
+    .tab-pane .row .col-md-3 img {
+        width: 130px;
+    }
+    .title_item_user_p {
+        color: var(--gsi-academy-black-b-3, #333);
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        /* 120% */
+        letter-spacing: 0.1px;
+    }
+    .detail_course_user_p {
+        /* Layout */
+        align-self: stretch;
+        /* Typography */
+        color: var(--gsi-academy-black-b-6, #7F7F7F);
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        /* 142.857% */
+        letter-spacing: 0.2px;
+    }
+    .right_side_user_p {
+        width: 24%;
+        /* border: 1px solid; */
+        margin-left: 10px;
+        background-color: white;
+        border-radius: 10px
+    }
 }
 
 @media (min-width: 1200px) {
