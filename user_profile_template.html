@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/calendar_plugin.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_responsive_query.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Academy</title>
+</head>
+
+<body>
+    <div class="container-fluid fixed-top menu_nav" style="position: sticky;">
+        <div class="container " id="navbar_container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand logo-image" href="https://academy.gsilab.id" id="logo_academy">
+                    <img src="https://academy.gsilab.id/img/logo.png" style="background-size: cover; width: 100%;" alt="alternative" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link page-scroll" href="/web/course">Courses <span
+                                class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link page-scroll" href="/web/training_workshop">Training
+                            &amp;
+                            Workshop</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link page-scroll" href="/web/event">Event</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link page-scroll" href="/web/blog">Blog</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link page-scroll" href="/web/about">About</a>
+                        </li>
+                        <!-- <li> <t t-call="website_sale.header_cart_link">
+                        <t t-set="_icon" t-value="True"/>
+                        <t t-set="_item_class" t-value="'nav-item mx-lg-3'"/>
+                        <t t-set="_link_class" t-value="'nav-link'"/>
+                    </t></li>
+                    <li><t t-call="portal.user_dropdown">
+                        <t t-set="_user_name" t-value="true"/>
+                        <t t-set="_item_class" t-value="'nav-item dropdown'"/>
+                        <t t-set="_link_class" t-value="'nav-link'"/>
+                        <t t-set="_dropdown_menu_class" t-value="'dropdown-menu-right'"/>
+                    </t></li> -->
+                    </ul>
+
+
+                    <ul class="navbar-nav">
+                        <li class=" nav-item ">
+                            <!-- <button class="btn btn-primary button-login ">Login</button> -->
+                            <t t-if="uid in (4,None)">
+                                <a href="/web/login" class="btn btn-primary button-login " role="button" id="login">
+                            Login</a>
+                            </t>
+                            <!-- <t t-if="uid not in (4,None) ">
+                        <a href="/web/session/logout" role="menuitem" data-menu="logout" class="btn btn-primary button-login ">
+                            Logout</a>
+                    </t> -->
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- #########################################################
+        ### 1. Body
+        ######################################################### -->
+    <!-- ###################
+        ### 1. 1 
+        ################### -->
+    <div class="banner_user_p"></div>
+    <!-- ###################
+        ### 1. 2
+        ################### -->
+    <div class="container">
+        <div class="row user_profile">
+            <div class="col-8">
+                <div class="header_nav ">
+                    <ul class="nav nav-pills flex-column flex-sm-row" id="pills-tab" role="tablist">
+                        <li class="flex-sm-fill text-sm-center nav-link " role="presentation">
+                            <button class="nav-link active" id="pills-courses-tab" data-toggle="pill" data-target="#pills-courses" type="button" role="tab" aria-controls="pills-courses" aria-selected="true">My Courses</button>
+                        </li>
+                        <li class="flex-sm-fill text-sm-center nav-link" role="presentation">
+                            <button class="nav-link" id="pills-training_workshop-tab" data-toggle="pill" data-target="#pills-training_workshop" type="button" role="tab" aria-controls="pills-training_workshop" aria-selected="false">My Training &amp; Workshop</button>
+                        </li>
+                        <li class="flex-sm-fill text-sm-center nav-link" role="presentation">
+                            <button class="nav-link" id="pills-event-tab" data-toggle="pill" data-target="#pills-event" type="button" role="tab" aria-controls="pills-event" aria-selected="false">My Event</button>
+                        </li>
+                        <li class="flex-sm-fill text-sm-center nav-link" role="presentation">
+                            <button class="nav-link" id="pills-transaction-tab" data-toggle="pill" data-target="#pills-transaction" type="button" role="tab" aria-controls="pills-transaction" aria-selected="false">My Transaction</button>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="tab-content mt-3 ml-3" id="pills-tabContent">
+                    <div class="tab-pane show active" id="pills-courses" role="tabpanel" aria-labelledby="pills-courses-tab">
+                        <div class="row border" style="border-radius: 10px;">
+                            <div class="col-3"><img src="img/alur_belajar_kelas1.png" alt="" style="width: 130px;"></div>
+                            <div class="col-9 ">
+                                <div class="d-flex title_item_user_p ">
+                                    <p class="mr-auto title_item_user_p">Medical Statistic Batch 1 </p>
+                                    <p class="type_item_user_p">Live Short Course</p>
+                                </div>
+                                <div class="detail_course_user_p">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ullam molestias quo fugit adipisci saepe tempora reiciendis corporis eos illum.
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="line_separe_title_course_20"></div>
+                        <div class="row border" style="border-radius: 10px;">
+                            <div class="col-3"><img src="img/alur_belajar_kelas1.png" alt="" style="width: 130px;"></div>
+                            <div class="col-9 ">
+                                <div class="d-flex title_item_user_p ">
+                                    <p class="mr-auto title_item_user_p">Medical Statistic Batch 2 </p>
+                                    <p class="type_item_user_p">Live Short Course</p>
+                                </div>
+                                <div class="detail_course_user_p">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ullam molestias quo fugit adipisci saepe tempora reiciendis corporis eos illum.
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-training_workshop" role="tabpanel" aria-labelledby="pills-training_workshop-tab">
+                        <div class="row border" style="border-radius: 10px;">
+                            <div class="col-3"><img src="img/alur_belajar_kelas1.png" alt="" style="width: 130px;"></div>
+                            <div class="col-9 ">
+                                <div class="d-flex title_item_user_p ">
+                                    <p class="mr-auto title_item_user_p">Medical Statistic Batch 1 </p>
+                                    <p class="type_item_user_p">Live Short Course</p>
+                                </div>
+                                <div class="detail_course_user_p">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ullam molestias quo fugit adipisci saepe tempora reiciendis corporis eos illum.
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="line_separe_title_course_20"></div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-event" role="tabpanel" aria-labelledby="pills-event-tab">
+                        <div class="row border" style="border-radius: 10px;">
+                            <div class="col-3"><img src="img/alur_belajar_kelas1.png" alt="" style="width: 130px;"></div>
+                            <div class="col-9 ">
+                                <div class="d-flex title_item_user_p ">
+                                    <p class="mr-auto title_item_user_p">Medical Statistic Batch 1 </p>
+                                    <p class="type_item_user_p">Live Short Course</p>
+                                </div>
+                                <div class="detail_course_user_p">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ullam molestias quo fugit adipisci saepe tempora reiciendis corporis eos illum.
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="line_separe_title_course_20"></div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-transaction" role="tabpanel" aria-labelledby="pills-transaction-tab">
+                        <div class="row border" style="border-radius: 10px;">
+                            <div class="col-3"><img src="img/alur_belajar_kelas1.png" alt="" style="width: 130px;"></div>
+                            <div class="col-9 ">
+                                <div class="d-flex title_item_user_p ">
+                                    <p class="mr-auto title_item_user_p">Medical Statistic Batch 1 </p>
+                                    <p class="type_item_user_p">Live Short Course</p>
+                                </div>
+                                <div class="detail_course_user_p">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ullam molestias quo fugit adipisci saepe tempora reiciendis corporis eos illum.
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="line_separe_title_course_20"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-4 border"></div>
+        </div>
+    </div>
+    <div class="container line_separated_100"></div>
+
+
+
+    <div class="container-fluid footer ">
+        <div class="line_separated_117 "></div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-3"><img src="https://academy.gsilab.id/img/logo.png " alt="alternative" /></div>
+                <div class="col-md-3">
+                    <div class="ml-auto footer_wrapper" id="menu">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item heading_title_footer" id="title_menu_footer">
+                                Menu</li>
+                            <li class="list-group-item"><a href="#">
+                                Course and Workshop</a></li>
+                            <li class="list-group-item"><a href="#">
+                                Research</a></li>
+                            <li class="list-group-item"><a href="#">
+                                Blog</a></li>
+                            <li class="list-group-item"><a href="#">
+                                Event</a></li>
+                            <li class="list-group-item"><a href="#">
+                                About</a></li>
+                            <li class="list-group-item"><a href="#">Privacy Policy</a></li>
+                            <li class="list-group-item"><a href="#">Terms
+                                &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="ml-auto footer_wrapper" id="office_hour">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item heading_title_footer" id="title_menu_footer">
+                                Office Hour</li>
+                            <li class="list-group-item">
+                                Monday - Friday <br /> 08.30 - 17.30</li>
+                            <li class="list-group-item heading_title_footer">
+                                Location</li>
+                            <li class="list-group-item">
+                                Genomics Hub<br/> Jl. Sultan Agung No.29,<br/> Guntur, Setiabudi,<br/> Jakarta Selatan, DKI Jakarta<br/> 12980
+                            </li>
+                            <li class="list-group-item heading_title_footer">Get in Touch</li>
+                            <li class="list-group-item get_touch">
+                                <div class="d-md-flex">
+                                    <img src="https://academy.gsilab.id/img/email.png " style="width: 24px; " />
+                                    <div> GSIAcademy@gsilab.id</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item get_touch">
+                                <div class="d-md-flex">
+                                    <a href="https://wa.me/081119230640">
+                                        <img src="https://academy.gsilab.id/img/wa_icon.png " style="width: 24px; " />
+                                    </a>
+                                    <div> 0811 1923 0640</div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="ml-auto footer_wrapper" id="social_media">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item heading_title_footer" id="title_menu_footer">
+                                Follow for More</li>
+                        </ul>
+                        <span class="fa-stack " style="font-size: 1.0rem; ">
+                                <a href="https://www.instagram.com/gsilab.id/">
+                                    <img src="https://academy.gsilab.id/img/ig.png " style="width: 24px; " />
+
+                                </a>
+                            </span>
+                        <span class="fa-stack " style="font-size: 1.0rem; ">
+                                <a href="https://www.facebook.com/GSILAB.ID/">
+                                    <img src="https://academy.gsilab.id/img/fb.png " style="width: 24px; " />
+                                </a>
+                            </span>
+                        <span class="fa-stack " style="font-size: 1.0rem; ">
+                                <a href="#your-link ">
+                                    <img src="https://academy.gsilab.id/img/spotify.png " style="width: 24px; " />
+                                </a>
+                            </span>
+                        <span class="fa-stack " style="font-size: 1.0rem; ">
+                                <a href="https://id.linkedin.com/company/gsi-lab">
+                                    <img src="https://academy.gsilab.id/img/linkdin.png " style="width: 24px; " />
+                                </a>
+                            </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="js/jquery.min.js "></script>
+    <script src="js/popper.js "></script>
+    <!-- <script src="js/bootstrap.min.js "></script> -->
+    <script src="js/main.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct " crossorigin="anonymous "></script>
+    <script src="my_js.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js " integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+ " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>

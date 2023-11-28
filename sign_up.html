@@ -27,18 +27,18 @@
                     <img src="https://academy.gsilab.id/img/logo.png" style="background-size: cover; width: 100%;" alt="alternative" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+							<span class="navbar-toggler-icon"></span>
+						</button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item mx-2">
                             <a class="nav-link page-scroll" href="/web/course">Courses <span
-                                class="sr-only">(current)</span></a>
+																class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link page-scroll" href="/web/training_workshop">Training
-                            &amp;
-                            Workshop</a>
+														&amp;
+														Workshop</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link page-scroll" href="/web/event">Event</a>
@@ -50,16 +50,16 @@
                             <a class="nav-link page-scroll" href="/web/about">About</a>
                         </li>
                         <!-- <li> <t t-call="website_sale.header_cart_link">
-                        <t t-set="_icon" t-value="True"/>
-                        <t t-set="_item_class" t-value="'nav-item mx-lg-3'"/>
-                        <t t-set="_link_class" t-value="'nav-link'"/>
-                    </t></li>
-                    <li><t t-call="portal.user_dropdown">
-                        <t t-set="_user_name" t-value="true"/>
-                        <t t-set="_item_class" t-value="'nav-item dropdown'"/>
-                        <t t-set="_link_class" t-value="'nav-link'"/>
-                        <t t-set="_dropdown_menu_class" t-value="'dropdown-menu-right'"/>
-                    </t></li> -->
+												<t t-set="_icon" t-value="True"/>
+												<t t-set="_item_class" t-value="'nav-item mx-lg-3'"/>
+												<t t-set="_link_class" t-value="'nav-link'"/>
+										</t></li>
+										<li><t t-call="portal.user_dropdown">
+												<t t-set="_user_name" t-value="true"/>
+												<t t-set="_item_class" t-value="'nav-item dropdown'"/>
+												<t t-set="_link_class" t-value="'nav-link'"/>
+												<t t-set="_dropdown_menu_class" t-value="'dropdown-menu-right'"/>
+										</t></li> -->
                     </ul>
 
 
@@ -68,7 +68,7 @@
                             <!-- <button class="btn btn-primary button-login ">Login</button> -->
                             <t t-if="uid in (4,None)">
                                 <a href="/web/login" class="btn btn-primary button-login " role="button" id="login_navbar">
-                            Login</a>
+														Login</a>
                             </t>
 
 
@@ -80,14 +80,14 @@
     </div>
 
     <!-- #########################################################
-        ### 1. Body
-        ######################################################### -->
+				### 1. Body
+				######################################################### -->
 
     <!-- ###################
-        ### 1. 1 login
-        ################### -->
+				### 1. 1 login
+				################### -->
     <div class="line_separate_hight_60"></div>
-    <section id="login_form">
+    <section id="signup_form">
         <div class="container ">
             <div class="row">
                 <div class="col-md-12">
@@ -102,7 +102,7 @@
                             <form>
                                 <div class="form-group">
                                     <label for="title">Title</label>
-                                    <select class="form-control form-control-lg form-select" name="title_field" id="title_field" aria-label="Default select example">
+                                    <select class="form-control form-select" name="title_field" id="title_field">
                                         <option value="3">Mr.</option>
                                         <option value="7">Mrs.</option>
                                         <option value="6">Ms</option>
@@ -111,7 +111,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Nama Lengkap</label>
-                                    <input type="text" name="name" t-att-value="name" id="name" class="form-control form-control-lg" required="required" t-att-readonly="'readonly' if only_passwords else None" t-att-autofocus="'autofocus' if login and not only_passwords else None" placeholder="Nama lengkap"
+                                    <input type="text" name="name" t-att-value="name" id="name" class="form-control" required="required" t-att-readonly="'readonly' if only_passwords else None" t-att-autofocus="'autofocus' if login and not only_passwords else None" placeholder="Nama lengkap"
                                     />
                                     <div class="alert alert-warning" id="alert_nama" style="display: none; text-align: center">
                                         Nama is required
@@ -123,9 +123,48 @@
                                     <input type="text" name="instansi" t-att-value="instansi" id="instansi" class="form-control" placeholder="Instansi" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Masukkan Email">
+                                    <label for="title">Pekerjaan</label>
+                                    <select onchange="onchangePekerjaan()" class="form-control form-select" name="pekerjaan" id="pekerjaan">
+                                        <option value="" >Pilih pekerjaan</option>
+                                        <option value="dokter">Dokter / Tenaga kesehatan</option>
+                                        <option value="pelajar">Pelajar / Mahasiswa</option>
+                                        <option value="dosen_pengajar">Dosen / Pengajar</option>
+                                        <option value="staf_lab">Staf laboratorium</option>
+                                        <option value="peneliti">Peneliti</option>
+                                        <option value="pekerjaan_lainnya">Lainnya</option>
+                                    </select>
+                                    <input type="text" id="pekerjaan_lainnya" name="pekerjaan_lainnya" class="form-control mt-2" style="display: none" placeholder="Pekerjaan lainnya" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">No. Hp</label>
+                                    <input type="text" id="phone" name="phone" t-att-value="phone" class="form-control" placeholder="No. Hp" />
+                                    <div class="alert alert-warning" id="alert_hp" style="display: none;">
+                                        Hp is required
+                                    </div>
 
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="login" name="login" t-att-value="login" class="form-control" required="required" placeholder="Masukkan Email" />
+                                    <div class="alert alert-warning" id="alert_email" style="display: none;">
+                                        Email is required
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="title">Referensi</label>
+                                    <select onchange="onchangeReff()" class="form-control form-select" name="referensi" id="referensi">
+                                        <option value="">Pilih referensi</option>
+                                        <option value="ig_gsilab">Instagram @gsilab.id</option>
+                                        <option value="ig_tanyadna">Instagram @tanyadna.id</option>
+                                        <option value="linkedin_gsilab">LinkedIn GSI Lab</option>
+                                        <option value="tiktok">Tiktok</option>
+                                        <option value="facebook">Facebook</option>
+                                        <option value="broadcast_wa">Broadcast Whatsapp</option>
+                                        <option value="telegram">Telegram</option>
+                                        <option value="referensi_lainnya">Lainnya</option>
+                                    </select>
+                                    <input type="text" id="referensi_lainnya" name="referensi_lainnya" class="form-control mt-2" style="display: none;" placeholder="Referensi lainnya" />
+                                    <small id="sumber_ref" class="form-text text-muted">* dari mana Anda mengetahui tentang GSI Academy?</small>
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Password</label>
@@ -134,6 +173,21 @@
 
                                     <!-- <small id="forgot_password" class="form-text text-muted text-right"><a href="#">Forgot Password</a></small> -->
                                 </div>
+                                <div class="form-group">
+                                    <label for="konfirmasi_password">Konfirmasi Password</label>
+
+                                    <input type="konfirmasi_password" class="form-control" id="konfirmasi_password" placeholder="Maukkan Kata Sandi">
+
+                                    <!-- <small id="forgot_password" class="form-text text-muted text-right"><a href="#">Forgot Password</a></small> -->
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="notifikasi" name="notifikasi" />
+
+                                    <label class="form-check-label" for="konfirmasi_password">Email notifikasi</label>
+                                    <small id="" class="form-text text-muted text-left">Apakah anda bersedia untuk menerima informasi terkait
+                                        kegiatan kami selanjutnya melalui email?</small>
+                                </div>
+
                                 <div class="line_separe_title_course_60"></div>
                                 <div class="row text-center">
                                     <div class="col-12">
@@ -161,18 +215,18 @@
                             <li class="list-group-item heading_title_footer" id="title_menu_footer">
                                 Menu</li>
                             <li class="list-group-item"><a href="#">
-                                Course and Workshop</a></li>
+																Course and Workshop</a></li>
                             <li class="list-group-item"><a href="#">
-                                Research</a></li>
+																Research</a></li>
                             <li class="list-group-item"><a href="#">
-                                Blog</a></li>
+																Blog</a></li>
                             <li class="list-group-item"><a href="#">
-                                Event</a></li>
+																Event</a></li>
                             <li class="list-group-item"><a href="#">
-                                About</a></li>
+																About</a></li>
                             <li class="list-group-item"><a href="#">Privacy Policy</a></li>
                             <li class="list-group-item"><a href="#">Terms
-                                &amp; Conditions</a></li>
+																&amp; Conditions</a></li>
                         </ul>
                     </div>
                 </div>
@@ -216,26 +270,26 @@
                                 Follow for More</li>
                         </ul>
                         <span class="fa-stack " style="font-size: 1.0rem; ">
-                                <a href="https://www.instagram.com/gsilab.id/">
-                                    <img src="https://academy.gsilab.id/img/ig.png " style="width: 24px; " />
+																<a href="https://www.instagram.com/gsilab.id/">
+																		<img src="https://academy.gsilab.id/img/ig.png " style="width: 24px; " />
 
-                                </a>
-                            </span>
+																</a>
+														</span>
                         <span class="fa-stack " style="font-size: 1.0rem; ">
-                                <a href="https://www.facebook.com/GSILAB.ID/">
-                                    <img src="https://academy.gsilab.id/img/fb.png " style="width: 24px; " />
-                                </a>
-                            </span>
+																<a href="https://www.facebook.com/GSILAB.ID/">
+																		<img src="https://academy.gsilab.id/img/fb.png " style="width: 24px; " />
+																</a>
+														</span>
                         <span class="fa-stack " style="font-size: 1.0rem; ">
-                                <a href="#your-link ">
-                                    <img src="https://academy.gsilab.id/img/spotify.png " style="width: 24px; " />
-                                </a>
-                            </span>
+																<a href="#your-link ">
+																		<img src="https://academy.gsilab.id/img/spotify.png " style="width: 24px; " />
+																</a>
+														</span>
                         <span class="fa-stack " style="font-size: 1.0rem; ">
-                                <a href="https://id.linkedin.com/company/gsi-lab">
-                                    <img src="https://academy.gsilab.id/img/linkdin.png " style="width: 24px; " />
-                                </a>
-                            </span>
+																<a href="https://id.linkedin.com/company/gsi-lab">
+																		<img src="https://academy.gsilab.id/img/linkdin.png " style="width: 24px; " />
+																</a>
+														</span>
                     </div>
                 </div>
 
@@ -259,10 +313,10 @@
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js " integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+ " crossorigin="anonymous "></script>
-    -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js " integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+ " crossorigin="anonymous "></script>
+		-->
 </body>
 
 </html>
