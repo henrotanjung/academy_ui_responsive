@@ -69,6 +69,26 @@ body {
     z-index: -1;
 }
 
+.our_activities_title {
+    color: var(--gsi-academy-blue-b-5, #0080BB);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 66px */
+    letter-spacing: -0.88px;
+}
+
+.our_activities_title span {
+    color: var(--gsi-academy-black-b-3, #333);
+}
+
+#our_activities .d-lg-flex div {
+    width: 32%;
+    height: 330px;
+}
+
 .text_in_banner {
     z-index: 10;
     margin-top: 79px;
@@ -1312,6 +1332,7 @@ card>img {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.2px;
+    margin-bottom: 0px;
 }
 
 
