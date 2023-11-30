@@ -69,6 +69,26 @@ body {
     z-index: -1;
 }
 
+.our_activities_title {
+    color: var(--gsi-academy-blue-b-5, #0080BB);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 66px */
+    letter-spacing: -0.88px;
+}
+
+.our_activities_title span {
+    color: var(--gsi-academy-black-b-3, #333);
+}
+
+#our_activities .d-lg-flex div {
+    width: 32%;
+    height: 330px;
+}
+
 .text_in_banner {
     z-index: 10;
     margin-top: 79px;
@@ -1312,6 +1332,7 @@ card>img {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.2px;
+    margin-bottom: 0px;
 }
 
 
@@ -2384,6 +2405,215 @@ card>img {
     line-height: 20px;
     /* 142.857% */
     letter-spacing: 0.2px;
+}
+
+
+/* ##################
+### About us
+##################### */
+
+.line_separate_210 {
+    min-height: 100px;
+}
+
+.banner_about_p {
+    /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('img/banner_about.png') center center no-repeat;
+    height: 715.53px; */
+    text-align: center;
+}
+
+.banner_text_title_about {
+    align-self: stretch;
+    color: var(--gsi-academy-blue-b-5, #0080BB);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 66px */
+    letter-spacing: -0.88px;
+}
+
+.gsi_academy_about_p {
+    padding: 50px 0px;
+}
+
+.gsi_academy_left img {
+    width: 431.609px;
+    height: 431.609px;
+}
+
+.banner_text_content_about {
+    color: var(--second-text-color, #737373);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.title_gsi_academy_right {
+    align-self: stretch;
+    color: var(--gsi-academy-black-b-3, #333);
+    text-align: right;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 66px */
+    letter-spacing: -0.88px;
+}
+
+.title_gsi_academy_right span {
+    color: var(--gsi-academy-blue-yellow-y-1, #F39501);
+}
+
+.gsi_academy_content_about_p {
+    align-self: stretch;
+    color: var(--second-text-color, #737373);
+    text-align: right;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.title_gsi_academy_left {
+    width: 409px;
+    color: var(--gsi-academy-blue-b-5, #0080BB);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 66px */
+    letter-spacing: -0.88px;
+}
+
+.vision_content_about_p {
+    width: 487px;
+    color: var(--second-text-color, #737373);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.gsi_academy_about_p .gsi_academy_left {
+    padding-bottom: 20px;
+}
+
+.line_separate_190 {
+    min-height: 130px;
+}
+
+.vision_right {
+    padding-bottom: 10px;
+    padding-left: 0px;
+    margin-top: 20px;
+}
+
+.vision_right img {
+    width: 455.609px;
+    height: 500px;
+}
+
+.mission_about_p {}
+
+.mission_content_about_p {
+    color: var(--second-text-color, #737373);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-align: right;
+}
+
+.title_mission_right {
+    /* align-self: stretch; */
+    color: var(--gsi-academy-blue-b-5, #0080BB);
+    /* text-align: right; */
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 66px */
+    letter-spacing: -0.88px;
+}
+
+
+/* <!-- ###################
+        ### 1.5 Coorporate Values
+        ################### --> */
+
+.title_coorporate_values {
+    color: var(--gsi-academy-black-b-3, #333);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 66px */
+    letter-spacing: -0.88px;
+}
+
+.title_coorporate_values span {
+    color: var(--gsi-academy-blue-yellow-y-1, #F39501);
+}
+
+.title_coorporate_val_content {
+    align-self: stretch;
+    color: var(--gsi-academy-black-b-3, #333);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 36px */
+    letter-spacing: -0.48px;
+    margin-bottom: 0px;
+}
+
+.coorporate_val_content {
+    align-self: stretch;
+    color: var(--gsi-academy-black-b-7, #999);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+#coorporate_val .col-4 img {
+    width: 120px;
+}
+
+.content_coorporate_value .row {
+    border-radius: 20px;
+    background: #F8FBFE;
+}
+
+.content_coorporate_value .row_left {
+    width: 100%;
+}
+
+.content_coorporate_value .row_right {
+    width: 100%;
+}
+
+#excelence .row {
+    width: 100%;
 }
 
 
