@@ -2622,6 +2622,39 @@ card>img {
 }
 
 
+/* ########################
+### Training and workshop
+########################### */
+
+.title_our_training_workshop {
+    color: var(--gsi-academy-black-b-3, #333);
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 66px */
+    letter-spacing: -0.88px;
+}
+
+.title_our_training_workshop span {
+    color: var(--gsi-academy-blue-yellow-y-1, #F39501);
+}
+
+.how_does_it_work .card_alur_training_workshop .card-title {
+    /* typography */
+    color: var(--text-color, #252B42);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 120% */
+    letter-spacing: 0.1px;
+}
+
+
 /* 
 #pekerjaan_lainnya {
     display: none!important;

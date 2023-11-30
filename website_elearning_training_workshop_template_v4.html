@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/calendar_plugin.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_responsive_query.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Academy</title>
+</head>
+
+<body>
+    <div class="container-fluid fixed-top menu_nav" style="position: sticky;">
+        <div class="container " id="navbar_container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand logo-image" href="https://academy.gsilab.id" id="logo_academy">
+                    <img src="https://academy.gsilab.id/img/logo.png" style="background-size: cover; width: 100%;" alt="alternative" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link page-scroll" href="/web/course">Courses <span
+                                class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link page-scroll" href="/web/training_workshop">Training
+                            &amp;
+                            Workshop</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link page-scroll" href="/web/event">Event</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link page-scroll" href="/web/blog">Blog</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link page-scroll" href="/web/about">About</a>
+                        </li>
+                        <!-- <li> <t t-call="website_sale.header_cart_link">
+                        <t t-set="_icon" t-value="True"/>
+                        <t t-set="_item_class" t-value="'nav-item mx-lg-3'"/>
+                        <t t-set="_link_class" t-value="'nav-link'"/>
+                    </t></li>
+                    <li><t t-call="portal.user_dropdown">
+                        <t t-set="_user_name" t-value="true"/>
+                        <t t-set="_item_class" t-value="'nav-item dropdown'"/>
+                        <t t-set="_link_class" t-value="'nav-link'"/>
+                        <t t-set="_dropdown_menu_class" t-value="'dropdown-menu-right'"/>
+                    </t></li> -->
+                    </ul>
+
+
+                    <ul class="navbar-nav">
+                        <li class=" nav-item ">
+                            <!-- <button class="btn btn-primary button-login ">Login</button> -->
+                            <t t-if="uid in (4,None)">
+                                <a href="/web/login" class="btn btn-primary button-login " role="button" id="login">
+                            Login</a>
+                            </t>
+                            <!-- <t t-if="uid not in (4,None) ">
+                        <a href="/web/session/logout" role="menuitem" data-menu="logout" class="btn btn-primary button-login ">
+                            Logout</a>
+                    </t> -->
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- #########################################################
+        ### 1. Body
+        ######################################################### -->
+
+    <!-- ###################
+        ### 1. 1 Banner
+        ################### -->
+    <section id="section_banner_training_workshop">
+        <div class="jumbotron-fluid banner_header_training_workshop">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-6 my-auto">
+                        <div class="banner_text_title_training_workshop">
+                            Bring your skills <span>to the next level!</span>
+                        </div>
+                        <div class="banner_text_content">
+                            Our Training and Workshop program provides comprehensive material through lectures, hands-on laboratory experience, dry-lab analysis, and more!
+                        </div>
+                        <div class="line_separate_50"></div>
+
+                        <a href="#" class="btn btn_banner">Find Out More</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container line_separated_100"></div>
+
+    <!-- <div class="line_separated_banner_popular_prog"></div> -->
+    <!-- ###################
+        ### 1. 1 Alur Training & Workshop
+        ################### -->
+    <div class="container alur_training_workshop">
+        <div class="title_our_training_workshop text-center">Alur
+            <span>Training & Workshop</span>
+        </div>
+        <div class="line_separe_title_course_60"></div>
+
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card border-0 card_alur_training_workshop">
+                    <img src="img/alur_belajar_kelas1.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body ">
+                        <div class="line_separate_card_25"></div>
+                        <div class="card-title text-left text-truncate-container_one_line text-center">Choose the workshop based on your needs</div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 card_how_does_it_work">
+                    <img src="img/alur_belajar_kelas2.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <div class="line_separate_card_25"></div>
+                        <div class="card-title text-left text-truncate-container_two_line text-center">Complete all the courses</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 card_how_does_it_work">
+                    <img src="img/alur_belajar_kelas3.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <div class="line_separate_card_25"></div>
+                        <div class="card-title text-left text-truncate-container_two_line text-center">Obtain certificate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ###################
+        ### 1.2 Pupular Program
+        ################### -->
+    <div class="container line_separated_100"></div>
+    <div class="container popular_course">
+        <div class="popular_course_tag">
+            <div class="title_popular_courses">Popular
+                <span>Programs</span>
+            </div>
+            <div class="line_separated_program"></div>
+            <div class="row text-center">
+                <div class="col text-center " style="text-align: center;"><span>Popular programs</span></div>
+                <div class="col"><span>Sequencing</span></div>
+                <div class="col"><span>Bioinformatics</span></div>
+            </div>
+            <div class="line_separe_title_course_20"></div>
+            <div class="row ">
+                <div class="col"><span>Microarray</span></div>
+                <div class="col"><span>Polymerase Chain Reaction</span></div>
+                <div class="col"><span>Next Generation Sequencing</span></div>
+
+            </div>
+
+        </div>
+        <div class="line_separe_title_course_60"></div>
+
+        <div class="popular_course_item">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card card_popular_course_item">
+                        <img src="img/kelas_yg_diminita1.png" class="card-img-top img-fluid" alt="...">
+
+                        <div class="card-body">
+                            <div class="line_separate_card_25"></div>
+                            <div class="card-title ">
+                                <div class="d-flex">
+                                    <p style="margin-right: auto;" class="course_title_popular_courese">Course Title</p>
+                                    <p style="margin-left: auto;" class="discount_percentage">IDR 100%</p>
+                                </div>
+                            </div>
+                            <div class="line_separate_card_25"></div>
+                            <p class="star_review text-left"><img src="img/star.png" alt=""><span> 4.5 / 5.0</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <p class="layers text-left"><img src="img/Layers.png" alt=""><span class="layers_popular_course_text" id="layers_popular_course_text"> 12 Materi</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <div class="text_course text-left text-truncate-container">
+                                This training will help you to know and understand what to do withThis training will help you to know and understand what to do withThis training will help you to know andand understand what to do withThis training will help you to know andand understand
+                                what to do withThis training will help you to know andand understand what to do withThis training will help you to know and
+                            </div>
+
+                            <div class="line_separate_card_25"></div>
+                            <div class="d-flex harga">
+                                <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                                <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                            </div>
+                            <div class="line_separate_50"></div>
+                            <!-- <div class="line_separate_height_10"></div> -->
+                            <a href="#" class="btn btn_our_course">Find out more</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card_popular_course_item">
+                        <img src="img/kelas_yg_diminita2.png" class="card-img-top img-fluid" alt="...">
+
+                        <div class="card-body">
+                            <div class="line_separate_card_25"></div>
+                            <div class="card-title ">
+                                <div class="d-flex">
+                                    <p style="margin-right: auto;" class="course_title_popular_courese">Course Title</p>
+                                    <p style="margin-left: auto;" class="discount_percentage">IDR 100%</p>
+                                </div>
+                            </div>
+                            <div class="line_separate_card_25"></div>
+                            <p class="star_review text-left"><img src="img/star.png" alt=""><span> 4.5 / 5.0</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <p class="layers text-left"><img src="img/Layers.png" alt=""><span class="layers_popular_course_text" id="layers_popular_course_text"> 12 Materi</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <div class="text_course text-left text-truncate-container">
+                                This training will help you to know and understand what to do withThis training will help you to know and understand what to do withThis training will help you to know andand understand what to do withThis training will help you to know andand understand
+                                what to do withThis training will help you to know andand understand what to do withThis training will help you to know and
+                            </div>
+
+                            <div class="line_separate_card_25"></div>
+                            <div class="d-flex harga">
+                                <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                                <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                            </div>
+                            <div class="line_separate_50"></div>
+                            <!-- <div class="line_separate_height_10"></div> -->
+                            <a href="#" class="btn btn_our_course">Find out more</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card_popular_course_item">
+                        <img src="img/kelas_yg_diminita3.png" class="card-img-top img-fluid" alt="...">
+
+                        <div class="card-body">
+                            <div class="line_separate_card_25"></div>
+                            <div class="card-title ">
+                                <div class="d-flex">
+                                    <p style="margin-right: auto;" class="course_title_popular_courese">Course Title</p>
+                                    <p style="margin-left: auto;" class="discount_percentage">IDR 100%</p>
+                                </div>
+                            </div>
+                            <div class="line_separate_card_25"></div>
+                            <p class="star_review text-left"><img src="img/star.png" alt=""><span> 4.5 / 5.0</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <p class="layers text-left"><img src="img/Layers.png" alt=""><span class="layers_popular_course_text" id="layers_popular_course_text"> 12 Materi</span></p>
+                            <div class="line_separate_card_25"></div>
+                            <div class="text_course text-left text-truncate-container">
+                                This training will help you to know and understand what to do withThis training will help you to know and understand what to do withThis training will help you to know andand understand what to do withThis training will help you to know andand understand
+                                what to do withThis training will help you to know andand understand what to do withThis training will help you to know and
+                            </div>
+
+                            <div class="line_separate_card_25"></div>
+                            <div class="d-flex harga">
+                                <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                                <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                            </div>
+                            <div class="line_separate_50"></div>
+                            <!-- <div class="line_separate_height_10"></div> -->
+                            <a href="#" class="btn btn_our_course">Find out more</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line_separate_to_pagenation_32"></div>
+            <div class="row pagenation_popular_prog">
+                <div class="col">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="135" height="16" viewBox="0 0 135 16" fill="none">
+                    <circle cx="67.5" cy="8" r="7.5" fill="#DDE0E4"/>
+                    <circle cx="97.5" cy="8" r="7.5" fill="#DDE0E4"/>
+                    <circle cx="127.5" cy="8" r="7.5" fill="#DDE0E4"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.55721 15.4998C7.53816 15.4999 7.51909 15.5 7.5 15.5C7.48091 15.5 7.46184 15.4999 7.44279 15.4998H6.9469V15.4799C3.06303 15.1968 0 11.9561 0 8C0 4.04389 3.06303 0.80319 6.9469 0.520085V0.5H7.5H37.0841V0.511337C37.2218 0.503812 37.3604 0.5 37.5 0.5C41.6421 0.5 45 3.85786 45 8C45 12.1421 41.6421 15.5 37.5 15.5C37.3604 15.5 37.2218 15.4962 37.0841 15.4887V15.4998H7.55721Z" fill="#0080BB"/>
+                  </svg>
+                </div>
+                <div class="col prev_next text-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path d="M23.75 13.7496H8.925L13.4625 8.29961C13.6747 8.04434 13.7768 7.71524 13.7463 7.38471C13.7158 7.05417 13.5553 6.74929 13.3 6.53711C13.0447 6.32494 12.7156 6.22286 12.3851 6.25334C12.0546 6.28381 11.7497 6.44434 11.5375 6.69961L5.2875 14.1996C5.24545 14.2593 5.20785 14.3219 5.175 14.3871C5.175 14.4496 5.175 14.4871 5.0875 14.5496C5.03084 14.6929 5.00118 14.8455 5 14.9996C5.00118 15.1537 5.03084 15.3063 5.0875 15.4496C5.0875 15.5121 5.0875 15.5496 5.175 15.6121C5.20785 15.6773 5.24545 15.74 5.2875 15.7996L11.5375 23.2996C11.655 23.4407 11.8022 23.5542 11.9686 23.632C12.1349 23.7097 12.3164 23.7499 12.5 23.7496C12.7921 23.7502 13.0751 23.6485 13.3 23.4621C13.4266 23.3572 13.5312 23.2283 13.6079 23.0829C13.6846 22.9374 13.7318 22.7783 13.7469 22.6146C13.762 22.4509 13.7447 22.2858 13.6959 22.1288C13.6471 21.9718 13.5678 21.8259 13.4625 21.6996L8.925 16.2496H23.75C24.0815 16.2496 24.3995 16.1179 24.6339 15.8835C24.8683 15.6491 25 15.3311 25 14.9996C25 14.6681 24.8683 14.3501 24.6339 14.1157C24.3995 13.8813 24.0815 13.7496 23.75 13.7496Z" fill="#0080BB"/>
+                  </svg>
+                    <span class="item_separate_pagination"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path d="M6.25 13.7496H21.075L16.5375 8.29961C16.3253 8.04434 16.2232 7.71524 16.2537 7.38471C16.2842 7.05417 16.4447 6.74929 16.7 6.53711C16.9553 6.32494 17.2844 6.22286 17.6149 6.25334C17.9454 6.28381 18.2503 6.44434 18.4625 6.69961L24.7125 14.1996C24.7545 14.2593 24.7922 14.3219 24.825 14.3871C24.825 14.4496 24.825 14.4871 24.9125 14.5496C24.9692 14.6929 24.9988 14.8455 25 14.9996C24.9988 15.1537 24.9692 15.3063 24.9125 15.4496C24.9125 15.5121 24.9125 15.5496 24.825 15.6121C24.7922 15.6773 24.7545 15.74 24.7125 15.7996L18.4625 23.2996C18.345 23.4407 18.1978 23.5542 18.0314 23.632C17.8651 23.7097 17.6836 23.7499 17.5 23.7496C17.2079 23.7502 16.9249 23.6485 16.7 23.4621C16.5734 23.3572 16.4688 23.2283 16.3921 23.0829C16.3154 22.9374 16.2682 22.7783 16.2531 22.6146C16.238 22.4509 16.2553 22.2858 16.3041 22.1288C16.3529 21.9718 16.4322 21.8259 16.5375 21.6996L21.075 16.2496H6.25C5.91848 16.2496 5.60054 16.1179 5.36612 15.8835C5.1317 15.6491 5 15.3311 5 14.9996C5 14.6681 5.1317 14.3501 5.36612 14.1157C5.60054 13.8813 5.91848 13.7496 6.25 13.7496Z" fill="#0080BB"/>
+                  </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line_separated_100"></div>
+
+
+    <!-- ###################
+        ### 1.3 dibimbing mentor berpengalaman
+        ################### -->
+    <div class="container ">
+        <div class="container line_separated_100"></div>
+        <div class="row image_be_part_of_us">
+            <div class="col-md-4 d-none d-md-block" id="image_first_col">
+                <img src="img/be_part_of_1.png" alt="" id="image_first">
+                <div class="line_separe_title_course_20"></div>
+                <p class="text-center title_image_mentor">Name Mentor</p>
+                <div class="line_separate_height_10"></div>
+                <p class="job_mentor text-center">job mentor</p>
+            </div>
+            <div class="col-md-4 text-center" id="image_center_col">
+                <img src="img/be_part_of_2.png" alt="" id="image_center" class="image_center">
+                <div class="line_separe_title_course_20"></div>
+                <p class="text-center title_image_mentor">Name Mentor</p>
+                <div class="line_separate_height_10"></div>
+                <p class="job_mentor">job mentor</p>
+            </div>
+            <div class="col-md-4 text-right d-none d-md-block" id="image_last_col">
+                <img src="img/be_part_of_3.png" alt="" id="image_last" class="image_last">
+                <div class="line_separe_title_course_20"></div>
+                <p class="text-center title_image_mentor">Name Mentor</p>
+                <div class="line_separate_height_10"></div>
+                <p class="text-center job_mentor">job mentor</p>
+            </div>
+        </div>
+    </div>
+    <div class="dibimbing_mentor_berpengalaman_text text-center">
+        <div class="container line_separated_420_cp"></div>
+        <p class="dibimbing_mentor_berpengalaman">Dibimbing <span>Fasilitator Berpengalaman </span></p>
+        <p class="to_part_of_us_context_sub m-auto">Join us as facilitators and trainers or partners in contributing and sharing knowledge for the society</p>
+    </div>
+
+
+    <div class="line_separated_100"></div>
+    <!-- ###################
+        ### 1.3 Kelas kami
+        ################### -->
+    <div class="container">
+        <div class="kelas_kami">
+            <div class="title_kelas_kami">
+                <p> All training <span>and workshop</span></p>
+            </div>
+            <div class="line_separe_title_course_20"></div>
+
+            <div class="d-flex harga">
+                <input type="text" class="form-control" id="" placeholder="Find Training and Workshop"><span class="form-control-feedback " id="searc_icon_cp"></span>
+                <span class="form-control-feedback " id="searc_icon_cp"> <img src="img/Funnel.png" style="margin-left: -40px; margin-top: 4px;"></span>
+
+            </div>
+
+            <div class="line_separe_title_course_60"></div>
+
+            <div class="container our_course our_course_cp">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="card card_our_course card_our_course_cp">
+                            <img src="img/lsc1.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <div class="line_separate_card_25"></div>
+                                <div class="card-title text-left text-truncate-container_one_line">Card titleCard titleCard titleCard titleCard title</div>
+                                <div class="line_separate_card_25"></div>
+                                <p class="tgl_course text-left"><img src="img/tgl_icon.png" alt=""><span class="tgl_text"> 24, 30 March & 6 April 2023</span></p>
+                                <div class="line_separate_card_25"></div>
+                                <p class="tgl_course text-left"><img src="img/Layers.png" alt=""><span class="tgl_text"> 3 session</span></p>
+                                <div class="line_separate_card_25"></div>
+                                <div class="text_course text-left text-truncate-container">This live short course provides knowledge ranging from the introduction to medical statistics, hypothesis testing and parametric...</div>
+                                <div class="line_separate_card_25"></div>
+                                <div class="d-flex harga">
+                                    <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                                    <p style="margin-left: auto;" class="harga_setelah_disc ">IDR 270.000</p>
+                                </div>
+                                <div class="line_separate_50"></div>
+                                <a href="#" class="btn btn_our_course">Find out more</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card_our_course card_our_course_cp">
+                            <img src="img/lsc1.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <div class="line_separate_card_25"></div>
+                                <div class="card-title text-left text-truncate-container_one_line">Card title</div>
+                                <div class="line_separate_card_25"></div>
+                                <p class="tgl_course text-left"><img src="img/tgl_icon.png" alt=""><span class="tgl_text"> 24, 30 March & 6 April 2023</span></p>
+                                <div class="line_separate_card_25"></div>
+                                <p class="tgl_course text-left"><img src="img/Layers.png" alt=""><span class="tgl_text"> 3 session</span></p>
+                                <div class="line_separate_card_25"></div>
+                                <div class="text_course text-left text-truncate-container">This live short course provides knowledge ranging from the introduction to medical statistics, hypothesis testing and parametric...</div>
+                                <div class="line_separate_card_25"></div>
+                                <div class="d-flex harga">
+                                    <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                                    <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                                </div>
+                                <div class="line_separate_50"></div>
+                                <a href="#" class="btn btn_our_course">Find out more</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card_our_course card_our_course_cp">
+                            <img src="img/lsc1.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <div class="line_separate_card_25"></div>
+                                <div class="card-title text-left text-truncate-container_one_line">Card title</div>
+                                <div class="line_separate_card_25"></div>
+                                <p class="tgl_course text-left"><img src="img/tgl_icon.png" alt=""><span class="tgl_text"> 24, 30 March & 6 April 2023</span></p>
+                                <div class="line_separate_card_25"></div>
+                                <p class="tgl_course text-left"><img src="img/Layers.png" alt=""><span class="tgl_text"> 3 session</span></p>
+                                <div class="line_separate_card_25"></div>
+                                <div class="text_course text-left text-truncate-container">This live short course provides knowledge ranging from the introduction to medical statistics, hypothesis testing and parametric...</div>
+                                <div class="line_separate_card_25"></div>
+                                <div class="d-flex harga">
+                                    <p style="margin-right: auto;" class="discount">IDR 300.000</p>
+                                    <p style="margin-left: auto;" class="harga_setelah_disc">IDR 270.000</p>
+                                </div>
+                                <div class="line_separate_50"></div>
+                                <a href="#" class="btn btn_our_course">Find out more</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="line_separated_100"></div>
+
+    <!-- ###################
+        ### 1.4 Frequently asked question
+        ################### -->
+
+    <div class="container faq">
+        <div class="row">
+            <div class="col-md-5 training_workshop_left" style="padding-left: 0px; margin-top: 20px;">
+                <img src="img/vektor1.png" alt="" style="width: 485px; height: 463px;">
+            </div>
+            <div class="col-md-7 col_right">
+                <div class="title_faq_right"> Frequently Asked <span class="">Questions</span>
+
+                </div>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card card_header_faq border-0">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" id="btn_faq" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 
+                              
+                                
+                                <span class="title_of_faq" ><span class="title_of_faq_text" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                  <path d="M11 13.5312V16.5312C11 16.8146 11.096 17.0522 11.288 17.2442C11.48 17.4362 11.7173 17.5319 12 17.5312C12.2833 17.5312 12.521 17.4352 12.713 17.2432C12.905 17.0512 13.0007 16.8139 13 16.5312V13.5312H16C16.2833 13.5312 16.521 13.4352 16.713 13.2432C16.905 13.0512 17.0007 12.8139 17 12.5312C17 12.2479 16.904 12.0102 16.712 11.8182C16.52 11.6262 16.2827 11.5306 16 11.5312H13V8.53125C13 8.24792 12.904 8.01025 12.712 7.81825C12.52 7.62625 12.2827 7.53058 12 7.53125C11.7167 7.53125 11.479 7.62725 11.287 7.81925C11.095 8.01125 10.9993 8.24858 11 8.53125V11.5312H8C7.71667 11.5312 7.479 11.6273 7.287 11.8193C7.095 12.0113 6.99933 12.2486 7 12.5312C7 12.8146 7.096 13.0523 7.288 13.2443C7.48 13.4363 7.71733 13.5319 8 13.5312H11ZM12 22.5312C10.6167 22.5312 9.31667 22.2686 8.1 21.7432C6.88333 21.2179 5.825 20.5056 4.925 19.6063C4.025 18.7063 3.31267 17.6479 2.788 16.4312C2.26333 15.2146 2.00067 13.9146 2 12.5312C2 11.1479 2.26267 9.84792 2.788 8.63125C3.31333 7.41458 4.02567 6.35625 4.925 5.45625C5.825 4.55625 6.88333 3.84392 8.1 3.31925C9.31667 2.79458 10.6167 2.53192 12 2.53125C13.3833 2.53125 14.6833 2.79392 15.9 3.31925C17.1167 3.84458 18.175 4.55692 19.075 5.45625C19.975 6.35625 20.6877 7.41458 21.213 8.63125C21.7383 9.84792 22.0007 11.1479 22 12.5312C22 13.9146 21.7373 15.2146 21.212 16.4312C20.6867 17.6479 19.9743 18.7063 19.075 19.6063C18.175 20.5063 17.1167 21.2189 15.9 21.7442C14.6833 22.2696 13.3833 22.5319 12 22.5312ZM12 20.5312C14.2333 20.5312 16.125 19.7562 17.675 18.2062C19.225 16.6562 20 14.7646 20 12.5312C20 10.2979 19.225 8.40625 17.675 6.85625C16.125 5.30625 14.2333 4.53125 12 4.53125C9.76667 4.53125 7.875 5.30625 6.325 6.85625C4.775 8.40625 4 10.2979 4 12.5312C4 14.7646 4.775 16.6562 6.325 18.2062C7.875 19.7562 9.76667 20.5312 12 20.5312Z" fill="#0080BB"/>
+                                </svg><span class="text_title_faq_final"> How to register an account?</span></span></span>
+                            </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Absolutely, we provide flexibility to our clients to meet their specific needs. Contact our team for more information
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card_header_faq border-0">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="btn_faq">
+                                  
+                                  <span class="title_of_faq" ><span class="title_of_faq_text title_of_faq_second" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                    <path d="M11 13.5312V16.5312C11 16.8146 11.096 17.0522 11.288 17.2442C11.48 17.4362 11.7173 17.5319 12 17.5312C12.2833 17.5312 12.521 17.4352 12.713 17.2432C12.905 17.0512 13.0007 16.8139 13 16.5312V13.5312H16C16.2833 13.5312 16.521 13.4352 16.713 13.2432C16.905 13.0512 17.0007 12.8139 17 12.5312C17 12.2479 16.904 12.0102 16.712 11.8182C16.52 11.6262 16.2827 11.5306 16 11.5312H13V8.53125C13 8.24792 12.904 8.01025 12.712 7.81825C12.52 7.62625 12.2827 7.53058 12 7.53125C11.7167 7.53125 11.479 7.62725 11.287 7.81925C11.095 8.01125 10.9993 8.24858 11 8.53125V11.5312H8C7.71667 11.5312 7.479 11.6273 7.287 11.8193C7.095 12.0113 6.99933 12.2486 7 12.5312C7 12.8146 7.096 13.0523 7.288 13.2443C7.48 13.4363 7.71733 13.5319 8 13.5312H11ZM12 22.5312C10.6167 22.5312 9.31667 22.2686 8.1 21.7432C6.88333 21.2179 5.825 20.5056 4.925 19.6063C4.025 18.7063 3.31267 17.6479 2.788 16.4312C2.26333 15.2146 2.00067 13.9146 2 12.5312C2 11.1479 2.26267 9.84792 2.788 8.63125C3.31333 7.41458 4.02567 6.35625 4.925 5.45625C5.825 4.55625 6.88333 3.84392 8.1 3.31925C9.31667 2.79458 10.6167 2.53192 12 2.53125C13.3833 2.53125 14.6833 2.79392 15.9 3.31925C17.1167 3.84458 18.175 4.55692 19.075 5.45625C19.975 6.35625 20.6877 7.41458 21.213 8.63125C21.7383 9.84792 22.0007 11.1479 22 12.5312C22 13.9146 21.7373 15.2146 21.212 16.4312C20.6867 17.6479 19.9743 18.7063 19.075 19.6063C18.175 20.5063 17.1167 21.2189 15.9 21.7442C14.6833 22.2696 13.3833 22.5319 12 22.5312ZM12 20.5312C14.2333 20.5312 16.125 19.7562 17.675 18.2062C19.225 16.6562 20 14.7646 20 12.5312C20 10.2979 19.225 8.40625 17.675 6.85625C16.125 5.30625 14.2333 4.53125 12 4.53125C9.76667 4.53125 7.875 5.30625 6.325 6.85625C4.775 8.40625 4 10.2979 4 12.5312C4 14.7646 4.775 16.6562 6.325 18.2062C7.875 19.7562 9.76667 20.5312 12 20.5312Z" fill="#0080BB"/>
+                                  </svg><span class="text_title_faq_final">Can we held the workshop in our own Laboratory?</span></span></span>
+                        </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Some placeholder content for the second accordion panel. This panel is hidden by default.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card_header_faq border-0">
+                        <div class="card-header " id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="btn_faq">
+                          
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M11 13.5312V16.5312C11 16.8146 11.096 17.0522 11.288 17.2442C11.48 17.4362 11.7173 17.5319 12 17.5312C12.2833 17.5312 12.521 17.4352 12.713 17.2432C12.905 17.0512 13.0007 16.8139 13 16.5312V13.5312H16C16.2833 13.5312 16.521 13.4352 16.713 13.2432C16.905 13.0512 17.0007 12.8139 17 12.5312C17 12.2479 16.904 12.0102 16.712 11.8182C16.52 11.6262 16.2827 11.5306 16 11.5312H13V8.53125C13 8.24792 12.904 8.01025 12.712 7.81825C12.52 7.62625 12.2827 7.53058 12 7.53125C11.7167 7.53125 11.479 7.62725 11.287 7.81925C11.095 8.01125 10.9993 8.24858 11 8.53125V11.5312H8C7.71667 11.5312 7.479 11.6273 7.287 11.8193C7.095 12.0113 6.99933 12.2486 7 12.5312C7 12.8146 7.096 13.0523 7.288 13.2443C7.48 13.4363 7.71733 13.5319 8 13.5312H11ZM12 22.5312C10.6167 22.5312 9.31667 22.2686 8.1 21.7432C6.88333 21.2179 5.825 20.5056 4.925 19.6063C4.025 18.7063 3.31267 17.6479 2.788 16.4312C2.26333 15.2146 2.00067 13.9146 2 12.5312C2 11.1479 2.26267 9.84792 2.788 8.63125C3.31333 7.41458 4.02567 6.35625 4.925 5.45625C5.825 4.55625 6.88333 3.84392 8.1 3.31925C9.31667 2.79458 10.6167 2.53192 12 2.53125C13.3833 2.53125 14.6833 2.79392 15.9 3.31925C17.1167 3.84458 18.175 4.55692 19.075 5.45625C19.975 6.35625 20.6877 7.41458 21.213 8.63125C21.7383 9.84792 22.0007 11.1479 22 12.5312C22 13.9146 21.7373 15.2146 21.212 16.4312C20.6867 17.6479 19.9743 18.7063 19.075 19.6063C18.175 20.5063 17.1167 21.2189 15.9 21.7442C14.6833 22.2696 13.3833 22.5319 12 22.5312ZM12 20.5312C14.2333 20.5312 16.125 19.7562 17.675 18.2062C19.225 16.6562 20 14.7646 20 12.5312C20 10.2979 19.225 8.40625 17.675 6.85625C16.125 5.30625 14.2333 4.53125 12 4.53125C9.76667 4.53125 7.875 5.30625 6.325 6.85625C4.775 8.40625 4 10.2979 4 12.5312C4 14.7646 4.775 16.6562 6.325 18.2062C7.875 19.7562 9.76667 20.5312 12 20.5312Z" fill="#0080BB"/>
+                          </svg>
+                          <span class="title_of_faq">Where is Genomics Hub location?</span>
+                        </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid footer ">
+        <div class="line_separated_117 "></div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-3"><img src="https://academy.gsilab.id/img/logo.png " alt="alternative" /></div>
+                <div class="col-md-3">
+                    <div class="ml-auto footer_wrapper" id="menu">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item heading_title_footer" id="title_menu_footer">
+                                Menu</li>
+                            <li class="list-group-item"><a href="#">
+                                Course and Workshop</a></li>
+                            <li class="list-group-item"><a href="#">
+                                Research</a></li>
+                            <li class="list-group-item"><a href="#">
+                                Blog</a></li>
+                            <li class="list-group-item"><a href="#">
+                                Event</a></li>
+                            <li class="list-group-item"><a href="#">
+                                About</a></li>
+                            <li class="list-group-item"><a href="#">Privacy Policy</a></li>
+                            <li class="list-group-item"><a href="#">Terms
+                                &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="ml-auto footer_wrapper" id="office_hour">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item heading_title_footer" id="title_menu_footer">
+                                Office Hour</li>
+                            <li class="list-group-item">
+                                Monday - Friday <br /> 08.30 - 17.30</li>
+                            <li class="list-group-item heading_title_footer">
+                                Location</li>
+                            <li class="list-group-item">
+                                Genomics Hub<br/> Jl. Sultan Agung No.29,<br/> Guntur, Setiabudi,<br/> Jakarta Selatan, DKI Jakarta<br/> 12980
+                            </li>
+                            <li class="list-group-item heading_title_footer">Get in Touch</li>
+                            <li class="list-group-item get_touch">
+                                <div class="d-md-flex">
+                                    <img src="https://academy.gsilab.id/img/email.png " style="width: 24px; " />
+                                    <div> GSIAcademy@gsilab.id</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item get_touch">
+                                <div class="d-md-flex">
+                                    <a href="https://wa.me/081119230640">
+                                        <img src="https://academy.gsilab.id/img/wa_icon.png " style="width: 24px; " />
+                                    </a>
+                                    <div> 0811 1923 0640</div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="ml-auto footer_wrapper" id="social_media">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item heading_title_footer" id="title_menu_footer">
+                                Follow for More</li>
+                        </ul>
+                        <span class="fa-stack " style="font-size: 1.0rem; ">
+                                <a href="https://www.instagram.com/gsilab.id/">
+                                    <img src="https://academy.gsilab.id/img/ig.png " style="width: 24px; " />
+
+                                </a>
+                            </span>
+                        <span class="fa-stack " style="font-size: 1.0rem; ">
+                                <a href="https://www.facebook.com/GSILAB.ID/">
+                                    <img src="https://academy.gsilab.id/img/fb.png " style="width: 24px; " />
+                                </a>
+                            </span>
+                        <span class="fa-stack " style="font-size: 1.0rem; ">
+                                <a href="#your-link ">
+                                    <img src="https://academy.gsilab.id/img/spotify.png " style="width: 24px; " />
+                                </a>
+                            </span>
+                        <span class="fa-stack " style="font-size: 1.0rem; ">
+                                <a href="https://id.linkedin.com/company/gsi-lab">
+                                    <img src="https://academy.gsilab.id/img/linkdin.png " style="width: 24px; " />
+                                </a>
+                            </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="js/jquery.min.js "></script>
+    <script src="js/popper.js "></script>
+    <!-- <script src="js/bootstrap.min.js "></script> -->
+    <script src="js/main.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct " crossorigin="anonymous "></script>
+    <script src="my_js.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js " integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+ " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>
