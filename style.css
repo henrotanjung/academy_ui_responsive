@@ -984,6 +984,17 @@ card>img {
     height: 24px;
 } */
 
+.wrap_tgl_item {
+    height: 32px;
+    margin-bottom: 0px;
+    /* border: 1px solid; */
+}
+
+.wrap_tgl_item img {
+    width: 24px;
+    height: 24px;
+}
+
 .training_and_workshop_item {
     height: 32px;
     /* border: 1px solid; */
@@ -2769,6 +2780,85 @@ card>img {
     line-height: 24px;
     /* 120% */
     letter-spacing: 0.1px;
+}
+
+
+/* ################
+### detail course
+################### */
+
+.product_name {
+    color: var(--gsi-academy-black-b-3, #333);
+    font-family: Poppins;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 66px */
+    letter-spacing: -0.88px;
+}
+
+.trainer {
+    color: var(--gsi-academy-black-b-3, #333);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 30px */
+    letter-spacing: -0.4px;
+}
+
+.detail_course {
+    color: var(--gsi-academy-black-b-5, #666);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 30px */
+    letter-spacing: -0.4px;
+}
+
+.title_course_description {
+    align-self: stretch;
+    color: var(--gsi-academy-blue-yellow-y-1, #F39501);
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.64px;
+}
+
+.course_description {
+    color: var(--gsi-academy-black-b-6, #7F7F7F);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.transparan_background {
+    display: flex;
+    padding: 15px 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 10px;
+    background: #F8F8F8;
+    color: var(--gsi-academy-blue-b-5, #0080BB);
+    text-align: center;
+    /* Button */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
 }
 
 
