@@ -3030,6 +3030,17 @@ card>img {
     font-weight: 600;
     line-height: normal;
 }
+
+
+/* banner home page */
+
+.banner_text_title_dojo, .banner_text_content_dojo, .button_banner_dojo {
+    margin-left: auto;
+    text-align: right;
+}
+
+
+
 /* 
 #pekerjaan_lainnya {
     display: none!important;
