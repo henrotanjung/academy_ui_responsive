@@ -480,6 +480,8 @@ card>img {
     min-height: 12px;
 }
 
+
+
 .want_to_learn_left_content {
     min-height: 90px;
     /* border: 1px solid blue; */
@@ -2971,6 +2973,72 @@ card>img {
     border-radius: 100px;
     background: #F8FBFE;
 }
+
+/* Cart page */
+
+.line_separate_24 {
+    min-height: 24px;
+}
+
+#cart .left .col-6, #cart .left .col-11 {
+    padding-left: 0px;
+}
+
+#cart .right li {
+    list-style-type: none;
+}
+
+#cart .right .description {
+    color: #252B42;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+    padding: 0px;
+}
+
+#cart .discount_incart {
+    color: #F00;
+}
+
+#cart .total_amount {
+    color: var(--GSI-Academy-Blue-B5, #0080BB);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+}
+
+#cart .left .card-body {
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+#cart .left .col-11 .row {
+    margin: 0px;
+}
+
+#cart .title {
+    color: var(--GSI-Academy-Blue-B5, #0080BB);
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+/* banner home page */
+
+.banner_text_title_dojo, .banner_text_content_dojo, .button_banner_dojo {
+    margin-left: auto;
+    text-align: right;
+}
+
 
 
 /* 
