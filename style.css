@@ -3034,9 +3034,13 @@ card>img {
 
 /* banner home page */
 
-.banner_text_title_dojo, .banner_text_content_dojo, .button_banner_dojo {
-    margin-left: auto;
-    text-align: right;
+.banner_text_title_dojo, .banner_text_content_dojo {
+    /* margin-left: auto; */
+    width: 500px;
+}
+
+.line_separate_height_55 {
+    min-height: 55px;
 }
 
 
